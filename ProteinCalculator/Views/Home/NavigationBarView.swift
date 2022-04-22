@@ -24,8 +24,11 @@ struct NavigationBarView: View {
             Spacer()
             
             Button(action:  {}, label: {
-                Image(systemName: "")
-            })
+                Image(systemName: "questionmark")
+                    .font(.title)
+                    .foregroundColor(.black)
+            })//: BUTTON
+            
         }//: HSTACK
     }
 }

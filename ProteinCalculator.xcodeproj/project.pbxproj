@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39450F59281348BE00512F73 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39450F58281348BE00512F73 /* LogoView.swift */; };
 		3957DDFE2810DB680012E0C2 /* ProteinCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3957DDFD2810DB680012E0C2 /* ProteinCalculatorApp.swift */; };
 		3957DE002810DB680012E0C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3957DDFF2810DB680012E0C2 /* ContentView.swift */; };
 		3957DE022810DB690012E0C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3957DE012810DB690012E0C2 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39450F58281348BE00512F73 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		3957DDFA2810DB680012E0C2 /* ProteinCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProteinCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3957DDFD2810DB680012E0C2 /* ProteinCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinCalculatorApp.swift; sourceTree = "<group>"; };
 		3957DDFF2810DB680012E0C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				39D4B24128125C6C0006EBE8 /* FooterView.swift */,
 				39D4B243281261C20006EBE8 /* NavigationBarView.swift */,
+				39450F58281348BE00512F73 /* LogoView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				3957DE002810DB680012E0C2 /* ContentView.swift in Sources */,
 				39D4B244281261C20006EBE8 /* NavigationBarView.swift in Sources */,
 				3957DDFE2810DB680012E0C2 /* ProteinCalculatorApp.swift in Sources */,
+				39450F59281348BE00512F73 /* LogoView.swift in Sources */,
 				39D4B24228125C6C0006EBE8 /* FooterView.swift in Sources */,
 				39D4B240281259CD0006EBE8 /* Constant.swift in Sources */,
 			);
