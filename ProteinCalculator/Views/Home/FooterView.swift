@@ -10,11 +10,12 @@ import SwiftUI
 struct FooterView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
+            /*
             Text("Corly Inc.")
                 .foregroundColor(.black)
                 .multilineTextAlignment(.center)
                 .layoutPriority(1)
-            
+            */
             
             Text("We love to hear feedback! If you have anything you'd like us to add contact us here.\nCorlyinc@yahoo.com")
                 .foregroundColor(.gray)

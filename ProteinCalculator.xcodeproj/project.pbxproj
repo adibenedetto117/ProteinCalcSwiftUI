@@ -16,6 +16,7 @@
 		39D4B240281259CD0006EBE8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D4B23F281259CD0006EBE8 /* Constant.swift */; };
 		39D4B24228125C6C0006EBE8 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D4B24128125C6C0006EBE8 /* FooterView.swift */; };
 		39D4B244281261C20006EBE8 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D4B243281261C20006EBE8 /* NavigationBarView.swift */; };
+		39FF95442813723A00A7BD87 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF95432813723A00A7BD87 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		39D4B23F281259CD0006EBE8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		39D4B24128125C6C0006EBE8 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		39D4B243281261C20006EBE8 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		39FF95432813723A00A7BD87 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				39D4B24128125C6C0006EBE8 /* FooterView.swift */,
 				39D4B243281261C20006EBE8 /* NavigationBarView.swift */,
 				39450F58281348BE00512F73 /* LogoView.swift */,
+				39FF95432813723A00A7BD87 /* SettingsView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				395A20002810E2CC00D074B1 /* Formulas.swift in Sources */,
+				39FF95442813723A00A7BD87 /* SettingsView.swift in Sources */,
 				3957DE002810DB680012E0C2 /* ContentView.swift in Sources */,
 				39D4B244281261C20006EBE8 /* NavigationBarView.swift in Sources */,
 				3957DDFE2810DB680012E0C2 /* ProteinCalculatorApp.swift in Sources */,

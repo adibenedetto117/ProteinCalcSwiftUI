@@ -10,20 +10,23 @@ import SwiftUI
 struct LogoView: View {
     var body: some View {
         HStack(spacing: 4) {
-            Text("Protein".uppercased())
+            Text("Protein converter".uppercased())
                 .font(.title3)
                 .fontWeight(.black)
                 .foregroundColor(.black)
             
+            /*
             Image("New_Logo3")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 30, height: 30, alignment: .center)
+                .frame(width: 25, height: 30, alignment: .center)
+             
             
-            Text("Calculator")
+            Text("CONVERTER")
                 .font(.title3)
                 .fontWeight(.black)
                 .foregroundColor(.black)
+             */
         }//: Hstack
     }
 }
