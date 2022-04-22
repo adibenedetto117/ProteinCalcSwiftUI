@@ -9,14 +9,9 @@
 import Foundation
 
 struct Formulas {
-    var codingStrandInput: String
-    var doubleStrandInputLineOne: String
-    var doubleStrandInputLineTwo: String
-    var templateStrandInput: String
-    var dnaToMRNAInput: String
     
     //MARK: CODINGSTRAND
-    func codingStrandToMRNA() -> String {
+    func codingStrandToMRNA(codingStrandInput: String) -> String {
         if codingStrandInput.uppercased().contains("T") {
             return codingStrandInput.replacingOccurrences(of: "T", with: "U")
         } else {
@@ -24,7 +19,7 @@ struct Formulas {
         }
     }
     //MARK: DOUBLESTRAND
-    func doubleStrandToMRNA() -> String {
+    func doubleStrandToMRNA(doubleStrandInputLineOne: String, doubleStrandInputLineTwo: String) -> String {
         if doubleStrandInputLineOne.uppercased().contains("ATG") {
             return doubleStrandInputLineOne.uppercased().replacingOccurrences(of: "T", with: "U")
         } else if doubleStrandInputLineTwo.uppercased().contains("GTA") {
@@ -35,7 +30,7 @@ struct Formulas {
     }
     
     //MARK: TEMPLATESTRAND
-    func templateStrandToMRNA() -> String {
+    func templateStrandToMRNA(templateStrandInput: String) -> String {
         var outputFinal: String = ""
         var output: [String] = []
         
@@ -58,19 +53,20 @@ struct Formulas {
         }
         return outputFinal
     }
+    
     //MARK: DNATOMRNA
-    func dnaToMRNA() -> String {
+    func dnaToMRNA(dnaToMRNAInput: String) -> String {
         var index = 0
         let string = dnaToMRNAInput.uppercased()
         let substring = "AUG"
-        if dnaToMRNAInput.contains(substring) {
+        if string.contains(substring) {
             for char in string {
                 if substring.first == char {
                     let startOfFoundCharacter = string.index(string.startIndex, offsetBy: index)
                     let lengthOfFoundCharacter = string.index(string.startIndex, offsetBy: (substring.count + index))
                     let range = startOfFoundCharacter..<lengthOfFoundCharacter
                     if string.substring(with: range) == substring {
-                        let startOfmRNAString = dnaToMRNAInput.substring(from: startOfFoundCharacter)
+                        let startOfmRNAString = string.substring(from: startOfFoundCharacter)
                         var counter = 0
                         var threeCharString = ""
                         var finalArray: [String] = []

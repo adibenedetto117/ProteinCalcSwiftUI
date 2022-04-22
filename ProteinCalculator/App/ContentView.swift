@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+//MARK: - PROPERTIES
+
+//MARK: - BODY
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        FooterView()
+            .padding(.horizontal)
     }
 }
 
