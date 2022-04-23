@@ -11,6 +11,7 @@ struct SettingsView: View {
     //MARK: - PROPERTIES
     
     @Environment(\.presentationMode) var presentationMode
+    @AppStorage("setting") var isSettingViewActive: Bool = false
     
     //MARK: - BODY
    
@@ -33,7 +34,7 @@ struct SettingsView: View {
                     Section(header: Text("About the application")) {
                         FormRowStaticView(icon: "doc.badge.gearshape.fill", firstText: "Application", secondText: "Protein Converter")
                         FormRowStaticView(icon: "checkmark.seal", firstText: "Compatibility", secondText: "iPhone, IPad")
-                        FormRowStaticView(icon: "keyboard", firstText: "Developer", secondText: "Anthony / Nicolas")
+                        FormRowStaticView(icon: "keyboard", firstText: "Developers", secondText: "Anthony / Nicolas")
                         FormRowStaticView(icon: "flag", firstText: "Version", secondText: "1.0.0")
                     }//: SECTION 4
                     .padding(.vertical, 3)
@@ -53,7 +54,9 @@ struct SettingsView: View {
                 
             } //: VSTACK
             .navigationBarItems(trailing: Button(action: {
-                self.presentationMode.wrappedValue.dismiss()
+                withAnimation(Animation.easeOut(duration: 0.5)) {
+                    isSettingViewActive = false
+                }
             }) {
                 Image(systemName: "xmark")
             }

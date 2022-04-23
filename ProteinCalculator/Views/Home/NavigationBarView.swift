@@ -10,47 +10,82 @@ import SwiftUI
 struct NavigationBarView: View {
     //MARK: - PROPERTIES
     
-    @State private var isAnimated: Bool = false
+    @State private var isAnimatedTitle: Bool = false
+    @AppStorage("setting") var isSettingViewActive: Bool = false
+    @State private var isAnimatedGear: Bool = false
+    @State private var isAnimatedQuestionMark: Bool = false
     
     //MARK: - BODY
     
     var body: some View {
         HStack {
-            Button(action: {}, label: {
-                Image(systemName: "gearshape")
-                    .font(.title)
-                    .foregroundColor(.black)
-            })//: BUTTON
             
             
-            Spacer()
+             Button(action: {
+                 withAnimation(Animation.easeOut(duration: 0.5)) {
+                     isSettingViewActive = true
+                 }
+             }, label: {
+             Image(systemName: "gearshape")
+             .font(.title)
+             .foregroundColor(.black)
+             .offset(x: isAnimatedGear ? 0 : -32, y: 0)
+             .onAppear(perform: {
+                 withAnimation(.easeOut(duration: 0.7)) {
+                     isAnimatedGear.toggle()
+                 }
+             })
+             
+             
+             })//: BUTTON
             
-            LogoView()
-                .opacity(isAnimated ? 1 : 0)
-                .offset(x: 0, y: isAnimated ? 0 : -25)
-                .onAppear(perform:  {
-                    withAnimation(.easeOut(duration: 0.5)) {
-                        isAnimated.toggle()
+            
+            /*
+            Image(systemName: "gearshape")
+                .font(.title)
+                .foregroundColor(.black)
+                .onTapGesture {
+                    withAnimation(.easeOut) {
+                        isSettingViewActive = true
                     }
-                })
-            Spacer()
-            
-            Button(action:  {}, label: {
-                Image(systemName: "questionmark.circle")
-                    .font(.title)
-                    .foregroundColor(.black)
-            })//: BUTTON
-            
-        }//: HSTACK
+                }
+              */
+                Spacer()
+                
+                LogoView()
+                    .opacity(isAnimatedTitle ? 1 : 0)
+                    .offset(x: 0, y: isAnimatedTitle ? 0 : -25)
+                    .onAppear(perform:  {
+                        withAnimation(.easeOut(duration: 0.5)) {
+                            isAnimatedTitle.toggle()
+                        }
+                    })
+                Spacer()
+                
+                Button(action:  {}, label: {
+                    Image(systemName: "questionmark.circle")
+                        .font(.title)
+                        .foregroundColor(.black)
+                        .offset(x: isAnimatedQuestionMark ? 0 : 32, y: 0)
+                        .onAppear(perform: {
+                            withAnimation(.easeOut(duration: 0.7)) {
+                                isAnimatedQuestionMark.toggle()
+                            }
+                        })
+                    
+                })//: BUTTON
+                
+            }//: HSTACK
+        }
     }
-}
-
-//MARK: - PREVIEW
-
-struct NavigationBarView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationBarView()
-            .previewLayout(.sizeThatFits)
-            .padding()
+    
+    //MARK: - PREVIEW
+    
+    struct NavigationBarView_Previews: PreviewProvider {
+        static var previews: some View {
+            NavigationBarView()
+                .previewLayout(.sizeThatFits)
+                .padding()
+        }
     }
-}
+

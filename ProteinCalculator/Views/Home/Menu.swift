@@ -66,10 +66,6 @@ struct Menu: View {
                 }
             }
         
-                        
-                
-                    
-                
             
             HStack {
             Button(action: {
@@ -85,7 +81,15 @@ struct Menu: View {
                     
             }
             Button(action: {
-                    displayedLetter?.append("T")
+
+                if let value = UIPasteboard.general.string {
+                    displayedLetter?.append(value)
+                } else {
+                    print("Error")
+                }
+                    
+                    
+                
             }) {
                 Text("Paste")
                     .bold()
@@ -96,7 +100,10 @@ struct Menu: View {
                     .cornerRadius(30)
             }
                 Button(action: {
-                    displayedLetter?.dropLast()
+                    if displayedLetter != "" {
+                        displayedLetter?.remove(at: displayedLetter!.index(before: displayedLetter!.endIndex))
+                    } 
+                    
                 }) {
                     Text("Delete")
                         .bold()
