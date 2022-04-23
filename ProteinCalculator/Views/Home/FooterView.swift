@@ -24,7 +24,7 @@ struct FooterView: View {
                 .multilineTextAlignment(.center)
                 .layoutPriority(0)
             
-            Text("© Copyright. All rights reserved.")
+            Text("\n© Copyright. All rights reserved.")
                 .font(.footnote)
                 .fontWeight(.bold)
                 .foregroundColor(.gray)
@@ -32,6 +32,7 @@ struct FooterView: View {
                 .layoutPriority(1)
 
         }//: VSTACK
+        .background(colorBackground.ignoresSafeArea(.all,edges: .all))
     }
 }
 
@@ -39,6 +40,6 @@ struct FooterView_Previews: PreviewProvider {
     static var previews: some View {
         FooterView()
             .previewLayout(.sizeThatFits)
-            .background(colorBackground)
+            
     }
 }
