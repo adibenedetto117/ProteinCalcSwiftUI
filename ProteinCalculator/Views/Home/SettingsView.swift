@@ -11,12 +11,13 @@ struct SettingsView: View {
     //MARK: - PROPERTIES
     
     //MARK: - BODY
-    
+   
     
     var body: some View {
         NavigationView {
             VStack(alignment: .center, spacing: 0) {
                 //MARK: - FORM
+                
                 
                 Form {
                     Text("Hello, World!")
@@ -30,9 +31,10 @@ struct SettingsView: View {
             } //: VSTACK
             .navigationBarTitle("Settings", displayMode: .inline)
             
-            
+           
         } //: NAVIGATION
     }
+    
 }
 
 //MARK: - PREVIEW

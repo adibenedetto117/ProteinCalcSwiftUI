@@ -9,7 +9,9 @@ import SwiftUI
 
 struct FooterView: View {
     var body: some View {
+        
         VStack(alignment: .center, spacing: 10) {
+            
             /*
             Text("Corly Inc.")
                 .foregroundColor(.black)
