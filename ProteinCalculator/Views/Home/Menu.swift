@@ -5,14 +5,37 @@
 //  Created by Anthony Dibenedetto on 4/22/22.
 //
 // Menu Push
-
+import SnapToScroll
 import SwiftUI
 
+struct Box {
+    var id: Int
+    let Title: String
+}
+
 struct Menu: View {
-    @State private var displayedLetter: String? = ""
     
+
+    @State private var displayedLetter: String? = ""
     var body: some View {
+        
+        
+        
+        HStackSnap(alignment: .center(8)) {
+            ForEach(0..<4, id:\.self) { number in
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(.background)
+                    .frame(width: 100, height: 40)
+                    .overlay(Text(number, format: .number).foregroundColor(.cyan))
+                        .snapAlignmentHelper(id: number)
+            }
+        }
+        
+        
+        
+        
         VStack(spacing: 32){
+            
             Text(displayedLetter!)
                 .font(.system(size: 40))
                 .bold()
@@ -70,7 +93,7 @@ struct Menu: View {
             
             HStack {
             Button(action: {
-                    displayedLetter?.append("T")
+                displayedLetter = codingStrandToMRNA(codingStrandInput: displayedLetter!)
             }) {
                 Text("Convert")
                     .bold()

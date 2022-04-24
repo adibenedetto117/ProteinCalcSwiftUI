@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Formulas {
+extension Menu {
     
     //MARK: CODINGSTRAND
     func codingStrandToMRNA(codingStrandInput: String) -> String {

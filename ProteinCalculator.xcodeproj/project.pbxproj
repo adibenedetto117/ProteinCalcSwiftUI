@@ -20,6 +20,7 @@
 		39D4B24228125C6C0006EBE8 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D4B24128125C6C0006EBE8 /* FooterView.swift */; };
 		39D4B244281261C20006EBE8 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D4B243281261C20006EBE8 /* NavigationBarView.swift */; };
 		39FF95442813723A00A7BD87 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF95432813723A00A7BD87 /* SettingsView.swift */; };
+		DFAEBA4E2814F3D500FA77A4 /* SnapToScroll in Frameworks */ = {isa = PBXBuildFile; productRef = DFAEBA4D2814F3D500FA77A4 /* SnapToScroll */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFAEBA4E2814F3D500FA77A4 /* SnapToScroll in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +178,9 @@
 			dependencies = (
 			);
 			name = ProteinCalculator;
+			packageProductDependencies = (
+				DFAEBA4D2814F3D500FA77A4 /* SnapToScroll */,
+			);
 			productName = ProteinCalculator;
 			productReference = 3957DDFA2810DB680012E0C2 /* ProteinCalculator.app */;
 			productType = "com.apple.product-type.application";
@@ -204,6 +209,9 @@
 				Base,
 			);
 			mainGroup = 3957DDF12810DB680012E0C2;
+			packageReferences = (
+				DFAEBA4C2814F3D500FA77A4 /* XCRemoteSwiftPackageReference "hstack-snap-to-scroll" */,
+			);
 			productRefGroup = 3957DDFB2810DB680012E0C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -445,6 +453,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DFAEBA4C2814F3D500FA77A4 /* XCRemoteSwiftPackageReference "hstack-snap-to-scroll" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftui-library/hstack-snap-to-scroll.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DFAEBA4D2814F3D500FA77A4 /* SnapToScroll */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFAEBA4C2814F3D500FA77A4 /* XCRemoteSwiftPackageReference "hstack-snap-to-scroll" */;
+			productName = SnapToScroll;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3957DDF22810DB680012E0C2 /* Project object */;
 }
