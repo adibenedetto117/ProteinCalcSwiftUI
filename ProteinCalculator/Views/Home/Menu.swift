@@ -8,18 +8,15 @@
 import SnapToScroll
 import SwiftUI
 
-struct Box {
-    var id: Int
-    let Title: String
-}
-
 struct Menu: View {
+
     
 
     @State private var displayedLetter: String? = ""
+
+
+
     var body: some View {
-        
-        
         
         HStackSnap(alignment: .center(8)) {
             ForEach(0..<4, id:\.self) { number in
@@ -35,11 +32,38 @@ struct Menu: View {
         
         
         VStack(spacing: 32){
-            
             Text(displayedLetter!)
                 .font(.system(size: 40))
                 .bold()
                 .frame(height: 10, alignment: .center)
+
+            if displayedLetter!.count < 25 {
+                Text(displayedLetter!)
+                    .font(.system(size: 60))
+                    .bold()
+                    .frame(height: 50, alignment: .center)
+                    .minimumScaleFactor(0.01)
+                    .padding()
+                
+            } else if displayedLetter!.count < 59{
+                Text(displayedLetter!)
+                    .font(.system(size: 20))
+                    .bold()
+                    .frame(height: 50, alignment: .center)
+                    .lineLimit(2)
+                    .padding()
+                
+            } else {
+                Text(displayedLetter!)
+                    .font(.system(size: 13))
+                    .bold()
+                    .frame(height: 50, alignment: .center)
+                    .lineLimit(3)
+                    .padding()
+            }
+            
+            
+
             HStack(spacing: 35) {
                 Button(action: {
                     displayedLetter?.append("A")

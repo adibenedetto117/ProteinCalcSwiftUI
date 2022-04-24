@@ -25,8 +25,9 @@ struct SettingsView: View {
                 Form {
                     //MARK: - SECTION 3
                     
-                    Section(header: Text("Check out our site")) {
+                    Section(header: Text("Check out our sites")) {
                         FormRowLinkView(icon: "globe", color: Color.pink, text: "Website", link: "https://www.corlyinc.com/")
+                        FormRowLinkView(icon: "text.book.closed", color: Color.pink, text: "Privacy Policy", link: "https://www.termsfeed.com/live/f9671267-3b63-4378-9118-3a563beb07bf")
                     }
                     
                     
