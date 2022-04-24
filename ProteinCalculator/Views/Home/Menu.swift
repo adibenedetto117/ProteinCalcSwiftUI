@@ -19,14 +19,12 @@ import SwiftUI
 
 
 struct Menu: View {
-    
+    @AppStorage("global") var whatIsGlobal: Int = 0
 
     @State private var displayedLetter: String? = ""
     var body: some View {
         
-        
-        
-        
+
         
         
         VStack(spacing: 32){
@@ -89,7 +87,10 @@ struct Menu: View {
             HStack {
             Button(action: {
                 
-                displayedLetter = codingStrandToMRNA(codingStrandInput: displayedLetter!)
+                displayedLetter = String(whatIsGlobal)
+                
+                //displayedLetter = codingStrandToMRNA(codingStrandInput: displayedLetter!)
+                
             }) {
                 Text("Convert")
                     .bold()

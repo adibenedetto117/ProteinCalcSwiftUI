@@ -12,7 +12,7 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("setting") var isSettingViewActive: Bool = false
-    @State private var selectedIndex: Int = 0
+    @State private var selectedIndex: Int = 1
     var body: some View {
         ZStack {
             if isSettingViewActive == false {
