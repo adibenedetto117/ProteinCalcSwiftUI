@@ -12,7 +12,7 @@
 //  Created by Anthony Dibenedetto on 4/22/22.
 //
 // Menu Push
-import SnapToScroll
+
 import SwiftUI
 
 
@@ -88,6 +88,7 @@ struct Menu: View {
             
             HStack {
             Button(action: {
+                
                 displayedLetter = codingStrandToMRNA(codingStrandInput: displayedLetter!)
             }) {
                 Text("Convert")

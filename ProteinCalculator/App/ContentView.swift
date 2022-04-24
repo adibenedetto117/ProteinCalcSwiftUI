@@ -12,10 +12,13 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("setting") var isSettingViewActive: Bool = false
+    @State private var selectedIndex: Int = 0
     var body: some View {
         ZStack {
             if isSettingViewActive == false {
                 VStack(spacing: 0) {
+                    
+                    
                     
                     let keyWindow = UIApplication.shared.connectedScenes
                         .compactMap({$0 as? UIWindowScene})
@@ -29,6 +32,8 @@ struct ContentView: View {
                         .padding(.top, keyWindow?.safeAreaInsets.top)
                         .background(Color.white)
                         .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
+                    ConvertSelector(selectedIndex: $selectedIndex)
+                        .background(colorBackground)
                     Spacer()
                     Menu()
                     Spacer()
