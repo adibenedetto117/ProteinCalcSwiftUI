@@ -19,7 +19,7 @@ import SwiftUI
 
 
 struct Menu: View {
-    @AppStorage("global") var whatIsGlobal: Int = 0
+    @AppStorage("global") var currentIndex: Int = 1
 
     @State private var displayedLetter: String? = ""
     var body: some View {
@@ -87,7 +87,7 @@ struct Menu: View {
             HStack {
             Button(action: {
                 
-                displayedLetter = String(whatIsGlobal)
+                displayedLetter = String(currentIndex)
                 
                 //displayedLetter = codingStrandToMRNA(codingStrandInput: displayedLetter!)
                 
