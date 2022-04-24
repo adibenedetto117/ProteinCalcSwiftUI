@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct Menu {
+extension Menu {
     
     //MARK: CODINGSTRAND
     func codingStrandToMRNA(codingStrandInput: String) -> String {
