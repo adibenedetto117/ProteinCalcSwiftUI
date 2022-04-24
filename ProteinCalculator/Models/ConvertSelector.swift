@@ -26,8 +26,9 @@ struct Category: Hashable {
 }
 
 struct ConvertSelector: View {
-    @AppStorage("global") var currentIndex: Int = 1
+    @AppStorage("global") var whatIsGlobal: Int = 1
     @Binding var selectedIndex: Int
+    @State private var currentIndex: Int = 1
     @Namespace private var ns
     
     init(selectedIndex: Binding<Int>) {
@@ -69,6 +70,7 @@ struct ConvertSelector: View {
                                     .onTapGesture {
                                         withAnimation {
                                             currentIndex = item.id
+                                            whatIsGlobal = currentIndex
                                             selectedIndex = currentIndex
                                             scrollView.scrollTo(item, anchor: .center)
                                             
