@@ -22,7 +22,7 @@ struct NavigationBarView: View {
             
             
              Button(action: {
-                 withAnimation(Animation.easeOut(duration: 0.5)) {
+                 withAnimation(Animation.linear(duration: 0.5)) {
                      isSettingViewActive = true
                  }
              }, label: {

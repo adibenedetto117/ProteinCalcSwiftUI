@@ -29,11 +29,30 @@ struct Menu: View {
         
         VStack(spacing: 8){
             
-            Text(displayedLetter!)
-                .font(.system(size: 40))
-                .bold()
-                .frame(height: 10, alignment: .center)
-                .padding(.bottom, 10)
+            if displayedLetter!.count < 25 {
+                Text(displayedLetter!)
+                    .font(.system(size: 60))
+                    .bold()
+                    .frame(height: 50, alignment: .center)
+                    .minimumScaleFactor(0.01)
+                    .padding()
+                
+            } else if displayedLetter!.count < 59{
+                Text(displayedLetter!)
+                    .font(.system(size: 20))
+                    .bold()
+                    .frame(height: 50, alignment: .center)
+                    .lineLimit(2)
+                    .padding()
+                
+            } else {
+                Text(displayedLetter!)
+                    .font(.system(size: 13))
+                    .bold()
+                    .frame(height: 50, alignment: .center)
+                    .lineLimit(3)
+                    .padding()
+            }
             HStack {
                 Button(action: {
                     displayedLetter?.append("A")
@@ -131,9 +150,7 @@ struct Menu: View {
                         
                 }
                 Button(action: {
-                    if displayedLetter != "" {
-                        displayedLetter?.remove(at: displayedLetter!.index(before: displayedLetter!.endIndex))
-                    }
+                    displayedLetter = ""
                     
                 }) {
                     Text("Clear")

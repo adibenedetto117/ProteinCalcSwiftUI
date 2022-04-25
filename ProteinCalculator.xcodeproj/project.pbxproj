@@ -13,6 +13,8 @@
 		3957DE022810DB690012E0C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3957DE012810DB690012E0C2 /* Assets.xcassets */; };
 		3957DE052810DB690012E0C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3957DE042810DB690012E0C2 /* Preview Assets.xcassets */; };
 		395A20002810E2CC00D074B1 /* Formulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395A1FFF2810E2CC00D074B1 /* Formulas.swift */; };
+		3964860D2817547D00F08B87 /* ScrollingStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964860C2817547D00F08B87 /* ScrollingStackModifier.swift */; };
+		3964860F2817564B00F08B87 /* ScrollViewWithSnap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964860E2817564B00F08B87 /* ScrollViewWithSnap.swift */; };
 		39704A722815053D003412C3 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39704A712815053D003412C3 /* Menu.swift */; };
 		39D173D4281385B7005077A0 /* FormRowStaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D173D3281385B7005077A0 /* FormRowStaticView.swift */; };
 		39D173D628138A12005077A0 /* FormRowLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D173D528138A12005077A0 /* FormRowLinkView.swift */; };
@@ -31,6 +33,8 @@
 		3957DE012810DB690012E0C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3957DE042810DB690012E0C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		395A1FFF2810E2CC00D074B1 /* Formulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formulas.swift; sourceTree = "<group>"; };
+		3964860C2817547D00F08B87 /* ScrollingStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingStackModifier.swift; sourceTree = "<group>"; };
+		3964860E2817564B00F08B87 /* ScrollViewWithSnap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewWithSnap.swift; sourceTree = "<group>"; };
 		39704A712815053D003412C3 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		39D173D3281385B7005077A0 /* FormRowStaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowStaticView.swift; sourceTree = "<group>"; };
 		39D173D528138A12005077A0 /* FormRowLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowLinkView.swift; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 			children = (
 				395A1FFF2810E2CC00D074B1 /* Formulas.swift */,
 				DF92DE4B2815D35700BBB0B9 /* ConvertSelector.swift */,
+				3964860C2817547D00F08B87 /* ScrollingStackModifier.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 				39450F58281348BE00512F73 /* LogoView.swift */,
 				39FF95432813723A00A7BD87 /* SettingsView.swift */,
 				39704A712815053D003412C3 /* Menu.swift */,
+				3964860E2817564B00F08B87 /* ScrollViewWithSnap.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -240,8 +246,10 @@
 				395A20002810E2CC00D074B1 /* Formulas.swift in Sources */,
 				39D173D4281385B7005077A0 /* FormRowStaticView.swift in Sources */,
 				39FF95442813723A00A7BD87 /* SettingsView.swift in Sources */,
+				3964860F2817564B00F08B87 /* ScrollViewWithSnap.swift in Sources */,
 				3957DE002810DB680012E0C2 /* ContentView.swift in Sources */,
 				39D4B244281261C20006EBE8 /* NavigationBarView.swift in Sources */,
+				3964860D2817547D00F08B87 /* ScrollingStackModifier.swift in Sources */,
 				39704A722815053D003412C3 /* Menu.swift in Sources */,
 				3957DDFE2810DB680012E0C2 /* ProteinCalculatorApp.swift in Sources */,
 				39450F59281348BE00512F73 /* LogoView.swift in Sources */,
