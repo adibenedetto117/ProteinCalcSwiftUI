@@ -27,13 +27,14 @@ struct Menu: View {
 
         
         
-        VStack(spacing: 32){
+        VStack(spacing: 8){
             
             Text(displayedLetter!)
                 .font(.system(size: 40))
                 .bold()
                 .frame(height: 10, alignment: .center)
-            HStack(spacing: 35) {
+                .padding(.bottom, 10)
+            HStack {
                 Button(action: {
                     displayedLetter?.append("A")
                 }) {
@@ -41,9 +42,10 @@ struct Menu: View {
                         .bold()
                         .font(.system(size: 30))
                         .foregroundColor(.cyan)
-                        .frame(width: 70, height: 30, alignment: .center)
+                        .frame(width: 72, height: 56, alignment: .center)
                         .background(buttonBackground)
-                        .cornerRadius(30)
+                        .cornerRadius(10)
+                        
                 }
                 Button(action: {
                         displayedLetter?.append("G")
@@ -53,9 +55,11 @@ struct Menu: View {
                         .font(.system(size: 30))
                         .foregroundColor(.cyan)
                         .padding()
-                        .frame(width: 70, height: 30, alignment: .center)
+                        .frame(width: 72, height: 56, alignment: .center)
                         .background(buttonBackground)
-                        .cornerRadius(30)
+                        .cornerRadius(10)
+                        
+                    
                 }
                 Button(action: {
                         displayedLetter?.append("T")
@@ -64,9 +68,10 @@ struct Menu: View {
                         .bold()
                         .font(.system(size: 30))
                         .foregroundColor(.cyan)
-                        .frame(width: 70, height: 30, alignment: .center)
+                        .frame(width: 72, height: 56, alignment: .center)
                         .background(buttonBackground)
-                        .cornerRadius(30)
+                        .cornerRadius(10)
+                        
                 }
                 Button(action: {
                         displayedLetter?.append("C")
@@ -76,31 +81,17 @@ struct Menu: View {
                         .font(.system(size: 30))
                         .foregroundColor(.cyan)
                         .padding()
-                        .frame(width: 70, height: 30, alignment: .center)
+                        .frame(width: 72, height: 56, alignment: .center)
                         .background(buttonBackground)
-                        .cornerRadius(30)
-            
+                        .cornerRadius(10)
+                       
+                    
                 }
             }
         
             
             HStack {
-            Button(action: {
-                
-                displayedLetter = String(whatIsGlobal)
-                
-                //displayedLetter = codingStrandToMRNA(codingStrandInput: displayedLetter!)
-                
-            }) {
-                Text("Convert")
-                    .bold()
-                    .font(.system(size: 30))
-                    .foregroundColor(.cyan)
-                    .frame(width: 150, height: 30, alignment: .center)
-                    .background(buttonBackground)
-                    .cornerRadius(30)
-                    
-            }
+        
             Button(action: {
 
                 if let value = UIPasteboard.general.string {
@@ -114,11 +105,14 @@ struct Menu: View {
             }) {
                 Text("Paste")
                     .bold()
-                    .font(.system(size: 30))
+                    .font(.system(size: 22))
                     .foregroundColor(.cyan)
-                    .frame(width: 115, height: 30, alignment: .center)
+                    .frame(width: 94, height: 56, alignment: .center)
                     .background(buttonBackground)
-                    .cornerRadius(30)
+                    .cornerRadius(10)
+                   
+                
+                    
             }
                 Button(action: {
                     if displayedLetter != "" {
@@ -128,13 +122,51 @@ struct Menu: View {
                 }) {
                     Text("Delete")
                         .bold()
-                        .font(.system(size: 30))
+                        .font(.system(size: 22))
                         .foregroundColor(.cyan)
-                        .frame(width: 115, height: 30, alignment: .center)
+                        .frame(width: 94, height: 56, alignment: .center)
                         .background(buttonBackground)
-                        .cornerRadius(30)
+                        .cornerRadius(10)
+                    
+                        
+                }
+                Button(action: {
+                    if displayedLetter != "" {
+                        displayedLetter?.remove(at: displayedLetter!.index(before: displayedLetter!.endIndex))
+                    }
+                    
+                }) {
+                    Text("Clear")
+                        .bold()
+                        .font(.system(size: 22))
+                        .foregroundColor(.cyan)
+                        .frame(width: 94, height: 56, alignment: .center)
+                        .background(buttonBackground)
+                        .cornerRadius(10)
+                    
+                        
                 }
         }
+            HStack {
+                Button(action: {
+                    
+                    displayedLetter = String(whatIsGlobal)
+                    
+                    //displayedLetter = codingStrandToMRNA(codingStrandInput: displayedLetter!)
+                    
+                }) {
+                    
+                    Text("Convert")
+                        .bold()
+                        .font(.system(size: 30))
+                        .foregroundColor(.cyan)
+                        .frame(width: 280, height: 56, alignment: .center)
+                        .background(buttonBackground)
+                        .cornerRadius(10)
+                       
+                    
+                }
+            }
             
     }
     

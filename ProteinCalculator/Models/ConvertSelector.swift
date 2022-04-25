@@ -57,7 +57,9 @@ struct ConvertSelector: View {
                                 ZStack() {
                                     Text(item.title)
                                         .bold()
+                                        .font(.system(size: 18))
                                         .foregroundColor(buttonBackground)
+                                        
                                         
                                         
                                     
@@ -65,8 +67,9 @@ struct ConvertSelector: View {
                                 }
                             } else {
                                 Text(item.title)
+                                    .bold()
                                     .foregroundColor(.cyan)
-                                    .font(.system(size: 12))
+                                    .font(.system(size: 18))
                                     .onTapGesture {
                                         withAnimation {
                                             currentIndex = item.id

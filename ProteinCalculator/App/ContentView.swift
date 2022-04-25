@@ -36,10 +36,10 @@ struct ContentView: View {
                         .background(colorBackground)
                     Spacer()
                     Menu()
-                    Spacer()
-                    Spacer()
                     
-                }//: VSTACK
+                    
+                    
+                }.padding(.bottom, 20)//: VSTACK
                 .background(colorBackground.ignoresSafeArea(.all,edges: .all))
             } else {
                 SettingsView()
