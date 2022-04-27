@@ -30,8 +30,12 @@ extension Menu {
         }
     }
     
-    func test(test: String) -> String{
-        return test + "bbbb"
+    func TorU(global: Int) -> String{
+        if global == 1 {
+            return "T"
+        } else {
+            return "U"
+        }
     }
     
     //MARK: TEMPLATESTRAND

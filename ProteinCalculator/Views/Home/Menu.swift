@@ -14,7 +14,6 @@ import SwiftUI
 struct Menu: View {
    
     @AppStorage("global") var whatIsGlobal: Int = 0
-    var TorU: String = ""
     @State private var displayedLetter: String? = ""
     var body: some View {
         
@@ -76,9 +75,9 @@ struct Menu: View {
                     
                 }
                 Button(action: {
-                        displayedLetter?.append("T")
+                        displayedLetter?.append(TorU(global: whatIsGlobal))
                 }) {
-                    Text("T")
+                    Text(TorU(global: whatIsGlobal))
                         .bold()
                         .font(.system(size: 30))
                         .foregroundColor(.cyan)
