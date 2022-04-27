@@ -1,0 +1,6 @@
+framework module Pods_ProteinCalculator {
+  umbrella header "Pods-ProteinCalculator-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0273C8E4A0EB19018F9342D115F2DB44 /* SnapIDModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540805C5DBB4C2F5339C87E8ECE73764 /* SnapIDModifier.swift */; };
+		0DF5C8ECFA2F184BC6D0BBE7866C748E /* UIKitIntrospectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8BA29482C4D7B3B3DAAF1425A4ECA6 /* UIKitIntrospectionView.swift */; };
+		11FC0DA4FE66FBF3E1F6BE749FDC2985 /* SnapAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E5B31E5783F950F350B28359FCE7AB /* SnapAlignment.swift */; };
+		243C6E40451C316E87BEDB21894C9046 /* Pods-ProteinCalculator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CB35CD9794FF3A61CD135BDC7A1B10 /* Pods-ProteinCalculator-dummy.m */; };
+		2729004A000D1BE10736826D9CB91382 /* SnappableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A9F690CA7CCE119FF5847439175DFE /* SnappableModifier.swift */; };
+		326F2D122205CC5A571C5E61FB1829AB /* CGPoint+Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B8BCFC120E5F124A86ED648947031E /* CGPoint+Distance.swift */; };
+		38F18A48E645EFADB31A4A64E9184ED5 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E38336A6B559F275F0B38287D64A63 /* ViewExtensions.swift */; };
+		3AC192DC89A5ED37BE60C7AEA097A6D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		41FE194DBA3A536E3D0D42F0295F0729 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		58757ADD7529AC32051EEDF7FCDA68D1 /* Snappable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8996C5AD967802CD2A3548D3F30BD997 /* Snappable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F2E04122EB55750D40EDFB21C58F5E6 /* Introspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A8B70F422FF43F66690F88976332E /* Introspect.swift */; };
+		7ED71BC7DF3D24C69CA67080456AD6D4 /* Snappable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A827157DCCD6C168809A0CDB3F335F38 /* Snappable-dummy.m */; };
+		8665A54A74A186D4BF930FB1C4EE622E /* SnapMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B754701F3E07A6CE87503CA93AB89C /* SnapMode.swift */; };
+		88386912FAB968107614F87B24E03F3F /* SnapID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CE33E5761CB2BC92B8322B6A41175 /* SnapID.swift */; };
+		88750A00FCFF3A82CC9828E9F75099D4 /* ScrollView+SnappableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13F82261AF376DE05E7278416B7DF6 /* ScrollView+SnappableModifier.swift */; };
+		A444959BC32FB2B141F18E2BFC998C09 /* View+SnappableIDModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D4AE9AB49931793C4B90F94CF61B9 /* View+SnappableIDModifier.swift */; };
+		C21EB8C10E6F9C5CB0F7E66903D554A4 /* SnapAnchorPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75A9DEC567430E5BBB85F155894B59 /* SnapAnchorPreferenceKey.swift */; };
+		C5BB795CC9B36C93462A33C5DA2EA782 /* SnapAlignment+Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181C9343B9DB087EF07E6F1607CD0FD9 /* SnapAlignment+Convert.swift */; };
+		C949D860645CC58E2B69D870AA3D4FF4 /* Pods-ProteinCalculator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75E219F6D33B983EADEEB913A3095195 /* Pods-ProteinCalculator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7489F0D54C523F8B77B7DC92E22E6F6 /* SnapTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C95EE62A09150A36D6472E66543B22 /* SnapTiming.swift */; };
+		E99600F604688818968A651AC730FB37 /* SnapAlignmentEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F45F4C40ABB63321353B30D68B67ED3 /* SnapAlignmentEnvironmentKey.swift */; };
+		F2DA4AEE02F9396B0362DBFF4E143D33 /* DraggingDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AC96B80A5F82C9B635B9E9651DBFC /* DraggingDetector.swift */; };
+		FCCB6AFD15A7887C6A2BB937186A0F0C /* CoordinateSpaceNameEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EC85B139254732A40343B070B1090B /* CoordinateSpaceNameEnvironmentKey.swift */; };
+		FFADA17D7803FE9A203B7FEC200C5F29 /* DecelerationRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98113D000B4ECD5C110BC718E16C89 /* DecelerationRate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		750F15FB874555621537C70C273FF6FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A70312AF62E6E323D574253CD30A3C06;
+			remoteInfo = Snappable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		181C9343B9DB087EF07E6F1607CD0FD9 /* SnapAlignment+Convert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SnapAlignment+Convert.swift"; path = "Sources/Internal/Extensions/SnapAlignment+Convert.swift"; sourceTree = "<group>"; };
+		183ECAE215B991FD5993A7FFBF62EB03 /* Snappable */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Snappable; path = Snappable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DCC4163BEF6117F5D7A4644ECF1CA42 /* Pods-ProteinCalculator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProteinCalculator-acknowledgements.plist"; sourceTree = "<group>"; };
+		1EC0EC1DA67E8811516BBAD44890A51D /* Snappable-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Snappable-Info.plist"; sourceTree = "<group>"; };
+		3D2CE33E5761CB2BC92B8322B6A41175 /* SnapID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapID.swift; path = Sources/Internal/Types/SnapID.swift; sourceTree = "<group>"; };
+		44B754701F3E07A6CE87503CA93AB89C /* SnapMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapMode.swift; path = Sources/Public/Types/SnapMode.swift; sourceTree = "<group>"; };
+		4E0AC96B80A5F82C9B635B9E9651DBFC /* DraggingDetector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DraggingDetector.swift; path = Sources/Internal/DraggingDetector.swift; sourceTree = "<group>"; };
+		540805C5DBB4C2F5339C87E8ECE73764 /* SnapIDModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapIDModifier.swift; path = Sources/Internal/ViewModifiers/SnapIDModifier.swift; sourceTree = "<group>"; };
+		57A9F690CA7CCE119FF5847439175DFE /* SnappableModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnappableModifier.swift; path = Sources/Internal/ViewModifiers/SnappableModifier.swift; sourceTree = "<group>"; };
+		57EC85B139254732A40343B070B1090B /* CoordinateSpaceNameEnvironmentKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoordinateSpaceNameEnvironmentKey.swift; path = Sources/Internal/Environments/CoordinateSpaceNameEnvironmentKey.swift; sourceTree = "<group>"; };
+		58780648223C0DF9CFD25325CF968778 /* Pods-ProteinCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProteinCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		5DFC860DC24662911B5E8C0DECBECCD8 /* Snappable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Snappable.modulemap; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		75E219F6D33B983EADEEB913A3095195 /* Pods-ProteinCalculator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ProteinCalculator-umbrella.h"; sourceTree = "<group>"; };
+		7B98113D000B4ECD5C110BC718E16C89 /* DecelerationRate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecelerationRate.swift; path = Sources/Public/Types/DecelerationRate.swift; sourceTree = "<group>"; };
+		85C95EE62A09150A36D6472E66543B22 /* SnapTiming.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapTiming.swift; path = Sources/Internal/Types/SnapTiming.swift; sourceTree = "<group>"; };
+		864CC4F2BB6627096633BF0602ABEF4A /* Pods-ProteinCalculator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ProteinCalculator.modulemap"; sourceTree = "<group>"; };
+		8996C5AD967802CD2A3548D3F30BD997 /* Snappable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Snappable-umbrella.h"; sourceTree = "<group>"; };
+		8D285CA78842788C1A636161A89C284A /* Pods-ProteinCalculator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ProteinCalculator-frameworks.sh"; sourceTree = "<group>"; };
+		8F45F4C40ABB63321353B30D68B67ED3 /* SnapAlignmentEnvironmentKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapAlignmentEnvironmentKey.swift; path = Sources/Internal/Environments/SnapAlignmentEnvironmentKey.swift; sourceTree = "<group>"; };
+		932A7EBE8E0EF5E47B2C759B139B4D9A /* Snappable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Snappable.release.xcconfig; sourceTree = "<group>"; };
+		9C75A9DEC567430E5BBB85F155894B59 /* SnapAnchorPreferenceKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapAnchorPreferenceKey.swift; path = Sources/Internal/Preferences/SnapAnchorPreferenceKey.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A827157DCCD6C168809A0CDB3F335F38 /* Snappable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Snappable-dummy.m"; sourceTree = "<group>"; };
+		A9CD1AB4F44254B4F1E2DDF4A6BFB24D /* Snappable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Snappable.debug.xcconfig; sourceTree = "<group>"; };
+		AB13F82261AF376DE05E7278416B7DF6 /* ScrollView+SnappableModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ScrollView+SnappableModifier.swift"; path = "Sources/Public/ScrollView+SnappableModifier.swift"; sourceTree = "<group>"; };
+		AF7C9FDBB86A92D634927D6361B47D20 /* Snappable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Snappable-prefix.pch"; sourceTree = "<group>"; };
+		B2B8BCFC120E5F124A86ED648947031E /* CGPoint+Distance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGPoint+Distance.swift"; path = "Sources/Internal/Extensions/CGPoint+Distance.swift"; sourceTree = "<group>"; };
+		C0175E18E6757195BADA5C3BB70BFE10 /* Pods-ProteinCalculator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProteinCalculator-Info.plist"; sourceTree = "<group>"; };
+		C5CB35CD9794FF3A61CD135BDC7A1B10 /* Pods-ProteinCalculator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ProteinCalculator-dummy.m"; sourceTree = "<group>"; };
+		C86A8B70F422FF43F66690F88976332E /* Introspect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Introspect.swift; path = Sources/Introspect/Introspect.swift; sourceTree = "<group>"; };
+		CB8BA29482C4D7B3B3DAAF1425A4ECA6 /* UIKitIntrospectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIKitIntrospectionView.swift; path = Sources/Introspect/UIKitIntrospectionView.swift; sourceTree = "<group>"; };
+		D4E38336A6B559F275F0B38287D64A63 /* ViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewExtensions.swift; path = Sources/Introspect/ViewExtensions.swift; sourceTree = "<group>"; };
+		D5DBCD6A32B76C7B5946B3982E0648D2 /* Pods-ProteinCalculator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ProteinCalculator"; path = Pods_ProteinCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7E5B31E5783F950F350B28359FCE7AB /* SnapAlignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapAlignment.swift; path = Sources/Public/Types/SnapAlignment.swift; sourceTree = "<group>"; };
+		F3803BB4D593103CD4364501590F416E /* Pods-ProteinCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProteinCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		F49D4AE9AB49931793C4B90F94CF61B9 /* View+SnappableIDModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+SnappableIDModifier.swift"; path = "Sources/Public/View+SnappableIDModifier.swift"; sourceTree = "<group>"; };
+		FE21CCA02B3839B20968C4FC1B576C21 /* Pods-ProteinCalculator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ProteinCalculator-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41122140551B30046553E2AF930CB89A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC192DC89A5ED37BE60C7AEA097A6D8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F20EB6BBA9CAE0BF43BD00E647987C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41FE194DBA3A536E3D0D42F0295F0729 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3803EE631DEE6FC2F79B771F54478D52 /* Pods-ProteinCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				864CC4F2BB6627096633BF0602ABEF4A /* Pods-ProteinCalculator.modulemap */,
+				FE21CCA02B3839B20968C4FC1B576C21 /* Pods-ProteinCalculator-acknowledgements.markdown */,
+				1DCC4163BEF6117F5D7A4644ECF1CA42 /* Pods-ProteinCalculator-acknowledgements.plist */,
+				C5CB35CD9794FF3A61CD135BDC7A1B10 /* Pods-ProteinCalculator-dummy.m */,
+				8D285CA78842788C1A636161A89C284A /* Pods-ProteinCalculator-frameworks.sh */,
+				C0175E18E6757195BADA5C3BB70BFE10 /* Pods-ProteinCalculator-Info.plist */,
+				75E219F6D33B983EADEEB913A3095195 /* Pods-ProteinCalculator-umbrella.h */,
+				F3803BB4D593103CD4364501590F416E /* Pods-ProteinCalculator.debug.xcconfig */,
+				58780648223C0DF9CFD25325CF968778 /* Pods-ProteinCalculator.release.xcconfig */,
+			);
+			name = "Pods-ProteinCalculator";
+			path = "Target Support Files/Pods-ProteinCalculator";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		829EB936A39F963910614E0109D2C6A0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3803EE631DEE6FC2F79B771F54478D52 /* Pods-ProteinCalculator */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9CECF35168E8C86EEBFCC627FBDABDC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AADC82D9A9AEF6022152E4F3B3FFFE93 /* Snappable */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AADC82D9A9AEF6022152E4F3B3FFFE93 /* Snappable */ = {
+			isa = PBXGroup;
+			children = (
+				B2B8BCFC120E5F124A86ED648947031E /* CGPoint+Distance.swift */,
+				57EC85B139254732A40343B070B1090B /* CoordinateSpaceNameEnvironmentKey.swift */,
+				7B98113D000B4ECD5C110BC718E16C89 /* DecelerationRate.swift */,
+				4E0AC96B80A5F82C9B635B9E9651DBFC /* DraggingDetector.swift */,
+				C86A8B70F422FF43F66690F88976332E /* Introspect.swift */,
+				AB13F82261AF376DE05E7278416B7DF6 /* ScrollView+SnappableModifier.swift */,
+				E7E5B31E5783F950F350B28359FCE7AB /* SnapAlignment.swift */,
+				181C9343B9DB087EF07E6F1607CD0FD9 /* SnapAlignment+Convert.swift */,
+				8F45F4C40ABB63321353B30D68B67ED3 /* SnapAlignmentEnvironmentKey.swift */,
+				9C75A9DEC567430E5BBB85F155894B59 /* SnapAnchorPreferenceKey.swift */,
+				3D2CE33E5761CB2BC92B8322B6A41175 /* SnapID.swift */,
+				540805C5DBB4C2F5339C87E8ECE73764 /* SnapIDModifier.swift */,
+				44B754701F3E07A6CE87503CA93AB89C /* SnapMode.swift */,
+				57A9F690CA7CCE119FF5847439175DFE /* SnappableModifier.swift */,
+				85C95EE62A09150A36D6472E66543B22 /* SnapTiming.swift */,
+				CB8BA29482C4D7B3B3DAAF1425A4ECA6 /* UIKitIntrospectionView.swift */,
+				F49D4AE9AB49931793C4B90F94CF61B9 /* View+SnappableIDModifier.swift */,
+				D4E38336A6B559F275F0B38287D64A63 /* ViewExtensions.swift */,
+				BF0F913CF82280DAA8E7F4E42F7B7843 /* Support Files */,
+			);
+			name = Snappable;
+			path = Snappable;
+			sourceTree = "<group>";
+		};
+		BF0F913CF82280DAA8E7F4E42F7B7843 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DFC860DC24662911B5E8C0DECBECCD8 /* Snappable.modulemap */,
+				A827157DCCD6C168809A0CDB3F335F38 /* Snappable-dummy.m */,
+				1EC0EC1DA67E8811516BBAD44890A51D /* Snappable-Info.plist */,
+				AF7C9FDBB86A92D634927D6361B47D20 /* Snappable-prefix.pch */,
+				8996C5AD967802CD2A3548D3F30BD997 /* Snappable-umbrella.h */,
+				A9CD1AB4F44254B4F1E2DDF4A6BFB24D /* Snappable.debug.xcconfig */,
+				932A7EBE8E0EF5E47B2C759B139B4D9A /* Snappable.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Snappable";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				9CECF35168E8C86EEBFCC627FBDABDC3 /* Pods */,
+				EDFD07ABAA5275BF51E35EAD7E22F26F /* Products */,
+				829EB936A39F963910614E0109D2C6A0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDFD07ABAA5275BF51E35EAD7E22F26F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5DBCD6A32B76C7B5946B3982E0648D2 /* Pods-ProteinCalculator */,
+				183ECAE215B991FD5993A7FFBF62EB03 /* Snappable */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		315FDC221624A75CB30C42DE7F67A8B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58757ADD7529AC32051EEDF7FCDA68D1 /* Snappable-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFABE8FFD4C196E0CE51C5F11D68E341 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C949D860645CC58E2B69D870AA3D4FF4 /* Pods-ProteinCalculator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8AC239D8CDD0112D054E8DD94B69E53D /* Pods-ProteinCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF56B56602122B6CBC7C8E89D4D0641A /* Build configuration list for PBXNativeTarget "Pods-ProteinCalculator" */;
+			buildPhases = (
+				BFABE8FFD4C196E0CE51C5F11D68E341 /* Headers */,
+				DEF7E816E69EA6038DFA03B3B0292FE1 /* Sources */,
+				B9F20EB6BBA9CAE0BF43BD00E647987C /* Frameworks */,
+				CF1B386C2E0076695DF0A062D013C3AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA86A2976DF0F69CCE4DD6D8B401BA18 /* PBXTargetDependency */,
+			);
+			name = "Pods-ProteinCalculator";
+			productName = Pods_ProteinCalculator;
+			productReference = D5DBCD6A32B76C7B5946B3982E0648D2 /* Pods-ProteinCalculator */;
+			productType = "com.apple.product-type.framework";
+		};
+		A70312AF62E6E323D574253CD30A3C06 /* Snappable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B169EEC47BA481AB185C63E2207DA74 /* Build configuration list for PBXNativeTarget "Snappable" */;
+			buildPhases = (
+				315FDC221624A75CB30C42DE7F67A8B4 /* Headers */,
+				52E46AB0F4B3F68800A2D5431295F1BC /* Sources */,
+				41122140551B30046553E2AF930CB89A /* Frameworks */,
+				8801578BB38EF9E011EDE1B4ABBE50F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Snappable;
+			productName = Snappable;
+			productReference = 183ECAE215B991FD5993A7FFBF62EB03 /* Snappable */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EDFD07ABAA5275BF51E35EAD7E22F26F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AC239D8CDD0112D054E8DD94B69E53D /* Pods-ProteinCalculator */,
+				A70312AF62E6E323D574253CD30A3C06 /* Snappable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8801578BB38EF9E011EDE1B4ABBE50F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF1B386C2E0076695DF0A062D013C3AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52E46AB0F4B3F68800A2D5431295F1BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				326F2D122205CC5A571C5E61FB1829AB /* CGPoint+Distance.swift in Sources */,
+				FCCB6AFD15A7887C6A2BB937186A0F0C /* CoordinateSpaceNameEnvironmentKey.swift in Sources */,
+				FFADA17D7803FE9A203B7FEC200C5F29 /* DecelerationRate.swift in Sources */,
+				F2DA4AEE02F9396B0362DBFF4E143D33 /* DraggingDetector.swift in Sources */,
+				5F2E04122EB55750D40EDFB21C58F5E6 /* Introspect.swift in Sources */,
+				88750A00FCFF3A82CC9828E9F75099D4 /* ScrollView+SnappableModifier.swift in Sources */,
+				11FC0DA4FE66FBF3E1F6BE749FDC2985 /* SnapAlignment.swift in Sources */,
+				C5BB795CC9B36C93462A33C5DA2EA782 /* SnapAlignment+Convert.swift in Sources */,
+				E99600F604688818968A651AC730FB37 /* SnapAlignmentEnvironmentKey.swift in Sources */,
+				C21EB8C10E6F9C5CB0F7E66903D554A4 /* SnapAnchorPreferenceKey.swift in Sources */,
+				88386912FAB968107614F87B24E03F3F /* SnapID.swift in Sources */,
+				0273C8E4A0EB19018F9342D115F2DB44 /* SnapIDModifier.swift in Sources */,
+				8665A54A74A186D4BF930FB1C4EE622E /* SnapMode.swift in Sources */,
+				7ED71BC7DF3D24C69CA67080456AD6D4 /* Snappable-dummy.m in Sources */,
+				2729004A000D1BE10736826D9CB91382 /* SnappableModifier.swift in Sources */,
+				D7489F0D54C523F8B77B7DC92E22E6F6 /* SnapTiming.swift in Sources */,
+				0DF5C8ECFA2F184BC6D0BBE7866C748E /* UIKitIntrospectionView.swift in Sources */,
+				A444959BC32FB2B141F18E2BFC998C09 /* View+SnappableIDModifier.swift in Sources */,
+				38F18A48E645EFADB31A4A64E9184ED5 /* ViewExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF7E816E69EA6038DFA03B3B0292FE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				243C6E40451C316E87BEDB21894C9046 /* Pods-ProteinCalculator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA86A2976DF0F69CCE4DD6D8B401BA18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Snappable;
+			target = A70312AF62E6E323D574253CD30A3C06 /* Snappable */;
+			targetProxy = 750F15FB874555621537C70C273FF6FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		426F40F44289C5569005BC464C980F8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3803BB4D593103CD4364501590F416E /* Pods-ProteinCalculator.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		92486E5E72E54FAF60E1A7D022C21B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		934ED2B84836A780113D1F63484628B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9CDFE7C0AA66BE8A16887F1BF096AC3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58780648223C0DF9CFD25325CF968778 /* Pods-ProteinCalculator.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A9FFB0521CFC44116A1446773ED86FA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9CD1AB4F44254B4F1E2DDF4A6BFB24D /* Snappable.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Snappable/Snappable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Snappable/Snappable-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Snappable/Snappable.modulemap";
+				PRODUCT_MODULE_NAME = Snappable;
+				PRODUCT_NAME = Snappable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB91B72F48164102C0D2E18E8456CE28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 932A7EBE8E0EF5E47B2C759B139B4D9A /* Snappable.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Snappable/Snappable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Snappable/Snappable-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Snappable/Snappable.modulemap";
+				PRODUCT_MODULE_NAME = Snappable;
+				PRODUCT_NAME = Snappable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934ED2B84836A780113D1F63484628B2 /* Debug */,
+				92486E5E72E54FAF60E1A7D022C21B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B169EEC47BA481AB185C63E2207DA74 /* Build configuration list for PBXNativeTarget "Snappable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FFB0521CFC44116A1446773ED86FA7 /* Debug */,
+				EB91B72F48164102C0D2E18E8456CE28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF56B56602122B6CBC7C8E89D4D0641A /* Build configuration list for PBXNativeTarget "Pods-ProteinCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426F40F44289C5569005BC464C980F8B /* Debug */,
+				9CDFE7C0AA66BE8A16887F1BF096AC3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3932CF6628178C1400D8648D /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3932CF6528178C1400D8648D /* Test.swift */; };
 		39450F59281348BE00512F73 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39450F58281348BE00512F73 /* LogoView.swift */; };
 		3957DDFE2810DB680012E0C2 /* ProteinCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3957DDFD2810DB680012E0C2 /* ProteinCalculatorApp.swift */; };
 		3957DE002810DB680012E0C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3957DDFF2810DB680012E0C2 /* ContentView.swift */; };
 		3957DE022810DB690012E0C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3957DE012810DB690012E0C2 /* Assets.xcassets */; };
 		3957DE052810DB690012E0C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3957DE042810DB690012E0C2 /* Preview Assets.xcassets */; };
 		395A20002810E2CC00D074B1 /* Formulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395A1FFF2810E2CC00D074B1 /* Formulas.swift */; };
-		3964860D2817547D00F08B87 /* ScrollingStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964860C2817547D00F08B87 /* ScrollingStackModifier.swift */; };
-		3964860F2817564B00F08B87 /* ScrollViewWithSnap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964860E2817564B00F08B87 /* ScrollViewWithSnap.swift */; };
 		39704A722815053D003412C3 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39704A712815053D003412C3 /* Menu.swift */; };
 		39D173D4281385B7005077A0 /* FormRowStaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D173D3281385B7005077A0 /* FormRowStaticView.swift */; };
 		39D173D628138A12005077A0 /* FormRowLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D173D528138A12005077A0 /* FormRowLinkView.swift */; };
@@ -22,10 +21,12 @@
 		39D4B24228125C6C0006EBE8 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D4B24128125C6C0006EBE8 /* FooterView.swift */; };
 		39D4B244281261C20006EBE8 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D4B243281261C20006EBE8 /* NavigationBarView.swift */; };
 		39FF95442813723A00A7BD87 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF95432813723A00A7BD87 /* SettingsView.swift */; };
+		A264234321F294F72706FD5F /* Pods_ProteinCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4FACDB83E18F5C5959F0EE /* Pods_ProteinCalculator.framework */; };
 		DF92DE4C2815D35700BBB0B9 /* ConvertSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF92DE4B2815D35700BBB0B9 /* ConvertSelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3932CF6528178C1400D8648D /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		39450F58281348BE00512F73 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		3957DDFA2810DB680012E0C2 /* ProteinCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProteinCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3957DDFD2810DB680012E0C2 /* ProteinCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinCalculatorApp.swift; sourceTree = "<group>"; };
@@ -33,8 +34,6 @@
 		3957DE012810DB690012E0C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3957DE042810DB690012E0C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		395A1FFF2810E2CC00D074B1 /* Formulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formulas.swift; sourceTree = "<group>"; };
-		3964860C2817547D00F08B87 /* ScrollingStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingStackModifier.swift; sourceTree = "<group>"; };
-		3964860E2817564B00F08B87 /* ScrollViewWithSnap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewWithSnap.swift; sourceTree = "<group>"; };
 		39704A712815053D003412C3 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		39D173D3281385B7005077A0 /* FormRowStaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowStaticView.swift; sourceTree = "<group>"; };
 		39D173D528138A12005077A0 /* FormRowLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowLinkView.swift; sourceTree = "<group>"; };
@@ -43,7 +42,10 @@
 		39D4B24128125C6C0006EBE8 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		39D4B243281261C20006EBE8 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		39FF95432813723A00A7BD87 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3D4FACDB83E18F5C5959F0EE /* Pods_ProteinCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProteinCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73FD262D9B3E6B82414AE298 /* Pods-ProteinCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProteinCalculator.debug.xcconfig"; path = "Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 		DF92DE4B2815D35700BBB0B9 /* ConvertSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertSelector.swift; sourceTree = "<group>"; };
+		FD7F11162F256E21BA28DB28 /* Pods-ProteinCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProteinCalculator.release.xcconfig"; path = "Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +53,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A264234321F294F72706FD5F /* Pods_ProteinCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01137CFFAB36E9823CD60723 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73FD262D9B3E6B82414AE298 /* Pods-ProteinCalculator.debug.xcconfig */,
+				FD7F11162F256E21BA28DB28 /* Pods-ProteinCalculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3957DDF12810DB680012E0C2 = {
 			isa = PBXGroup;
 			children = (
 				3957DDFC2810DB680012E0C2 /* ProteinCalculator */,
 				3957DDFB2810DB680012E0C2 /* Products */,
+				01137CFFAB36E9823CD60723 /* Pods */,
+				965F0698AD4781E9F40FF616 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,7 +116,6 @@
 			children = (
 				395A1FFF2810E2CC00D074B1 /* Formulas.swift */,
 				DF92DE4B2815D35700BBB0B9 /* ConvertSelector.swift */,
-				3964860C2817547D00F08B87 /* ScrollingStackModifier.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -128,6 +141,7 @@
 			children = (
 				3957DDFD2810DB680012E0C2 /* ProteinCalculatorApp.swift */,
 				3957DDFF2810DB680012E0C2 /* ContentView.swift */,
+				3932CF6528178C1400D8648D /* Test.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -140,7 +154,6 @@
 				39450F58281348BE00512F73 /* LogoView.swift */,
 				39FF95432813723A00A7BD87 /* SettingsView.swift */,
 				39704A712815053D003412C3 /* Menu.swift */,
-				3964860E2817564B00F08B87 /* ScrollViewWithSnap.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -169,6 +182,14 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		965F0698AD4781E9F40FF616 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D4FACDB83E18F5C5959F0EE /* Pods_ProteinCalculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3957DE082810DB690012E0C2 /* Build configuration list for PBXNativeTarget "ProteinCalculator" */;
 			buildPhases = (
+				29D51EF14088BFCB6833AB43 /* [CP] Check Pods Manifest.lock */,
 				3957DDF62810DB680012E0C2 /* Sources */,
 				3957DDF72810DB680012E0C2 /* Frameworks */,
 				3957DDF82810DB680012E0C2 /* Resources */,
+				B83B146FC775D2C817D52426 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,6 +261,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29D51EF14088BFCB6833AB43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProteinCalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B83B146FC775D2C817D52426 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3957DDF62810DB680012E0C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -246,11 +311,10 @@
 				395A20002810E2CC00D074B1 /* Formulas.swift in Sources */,
 				39D173D4281385B7005077A0 /* FormRowStaticView.swift in Sources */,
 				39FF95442813723A00A7BD87 /* SettingsView.swift in Sources */,
-				3964860F2817564B00F08B87 /* ScrollViewWithSnap.swift in Sources */,
 				3957DE002810DB680012E0C2 /* ContentView.swift in Sources */,
 				39D4B244281261C20006EBE8 /* NavigationBarView.swift in Sources */,
-				3964860D2817547D00F08B87 /* ScrollingStackModifier.swift in Sources */,
 				39704A722815053D003412C3 /* Menu.swift in Sources */,
+				3932CF6628178C1400D8648D /* Test.swift in Sources */,
 				3957DDFE2810DB680012E0C2 /* ProteinCalculatorApp.swift in Sources */,
 				39450F59281348BE00512F73 /* LogoView.swift in Sources */,
 				39D173D628138A12005077A0 /* FormRowLinkView.swift in Sources */,
@@ -379,6 +443,7 @@
 		};
 		3957DE092810DB690012E0C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73FD262D9B3E6B82414AE298 /* Pods-ProteinCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -410,6 +475,7 @@
 		};
 		3957DE0A2810DB690012E0C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD7F11162F256E21BA28DB28 /* Pods-ProteinCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

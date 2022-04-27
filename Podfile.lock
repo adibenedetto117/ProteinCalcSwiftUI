@@ -1,0 +1,16 @@
+PODS:
+  - Snappable (0.3.0)
+
+DEPENDENCIES:
+  - Snappable (~> 0.3.0)
+
+SPEC REPOS:
+  trunk:
+    - Snappable
+
+SPEC CHECKSUMS:
+  Snappable: 8db31258d36c7fba14e951134e0d14592a0f3ba9
+
+PODFILE CHECKSUM: 69ea9fe17ff77e4fffd83502888172acb1fd6e54
+
+COCOAPODS: 1.11.2

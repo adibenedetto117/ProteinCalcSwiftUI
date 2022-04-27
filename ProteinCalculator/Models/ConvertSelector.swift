@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-
-
+//MARK: - Variables
 var Categories: [Category] = []
 var lastIndex: Int = 0
 
@@ -62,11 +61,13 @@ struct ConvertSelector: View {
                                         
                                         
                                         
+                                        
                                     
                                     
                                 }
                             } else {
                                 Text(item.title)
+                                    
                                     .bold()
                                     .foregroundColor(.cyan)
                                     .font(.system(size: 18))
@@ -76,6 +77,7 @@ struct ConvertSelector: View {
                                             whatIsGlobal = currentIndex
                                             selectedIndex = currentIndex
                                             scrollView.scrollTo(item, anchor: .center)
+                                                
                                             
                                         }
                                     }
@@ -85,8 +87,11 @@ struct ConvertSelector: View {
                     }
                     .padding(.leading, 20)
                     .padding(.trailing, 20)
+                    
+                    
                }
             }
+            
         }
         .padding()
         

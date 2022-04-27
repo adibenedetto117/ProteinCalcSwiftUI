@@ -2,13 +2,6 @@
 //  Menu.swift
 //  ProteinCalculator
 //
-//  Created by Anthony Dibenedetto on 4/23/22.
-//
-
-//
-//  Menu.swift
-//  ProteinCalculator
-//
 //  Created by Anthony Dibenedetto on 4/22/22.
 //
 // Menu Push
@@ -170,6 +163,7 @@ struct Menu: View {
                     displayedLetter = String(whatIsGlobal)
                     
                     //displayedLetter = codingStrandToMRNA(codingStrandInput: displayedLetter!)
+                
                     
                 }) {
                     
