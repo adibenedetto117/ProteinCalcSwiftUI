@@ -30,8 +30,8 @@ extension Menu {
         }
     }
     
-    func TorU(global: Int) -> String{
-        if global == 1 {
+    func TorU(Global: Int) -> String {
+        if Global == 1 {
             return "T"
         } else {
             return "U"

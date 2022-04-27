@@ -21,6 +21,7 @@
 		39D4B244281261C20006EBE8 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D4B243281261C20006EBE8 /* NavigationBarView.swift */; };
 		39FF95442813723A00A7BD87 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF95432813723A00A7BD87 /* SettingsView.swift */; };
 		A264234321F294F72706FD5F /* Pods_ProteinCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4FACDB83E18F5C5959F0EE /* Pods_ProteinCalculator.framework */; };
+		DF3827552819E26B00F12365 /* questionPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3827542819E26B00F12365 /* questionPageView.swift */; };
 		DF92DE4C2815D35700BBB0B9 /* ConvertSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF92DE4B2815D35700BBB0B9 /* ConvertSelector.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		39FF95432813723A00A7BD87 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3D4FACDB83E18F5C5959F0EE /* Pods_ProteinCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProteinCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FD262D9B3E6B82414AE298 /* Pods-ProteinCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProteinCalculator.debug.xcconfig"; path = "Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		DF3827542819E26B00F12365 /* questionPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionPageView.swift; sourceTree = "<group>"; };
 		DF92DE4B2815D35700BBB0B9 /* ConvertSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertSelector.swift; sourceTree = "<group>"; };
 		FD7F11162F256E21BA28DB28 /* Pods-ProteinCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProteinCalculator.release.xcconfig"; path = "Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +153,7 @@
 				39450F58281348BE00512F73 /* LogoView.swift */,
 				39FF95432813723A00A7BD87 /* SettingsView.swift */,
 				39704A712815053D003412C3 /* Menu.swift */,
+				DF3827542819E26B00F12365 /* questionPageView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				39704A722815053D003412C3 /* Menu.swift in Sources */,
 				3957DDFE2810DB680012E0C2 /* ProteinCalculatorApp.swift in Sources */,
 				39450F59281348BE00512F73 /* LogoView.swift in Sources */,
+				DF3827552819E26B00F12365 /* questionPageView.swift in Sources */,
 				39D173D628138A12005077A0 /* FormRowLinkView.swift in Sources */,
 				39D4B24228125C6C0006EBE8 /* FooterView.swift in Sources */,
 				DF92DE4C2815D35700BBB0B9 /* ConvertSelector.swift in Sources */,

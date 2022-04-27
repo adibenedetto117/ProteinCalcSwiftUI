@@ -75,9 +75,9 @@ struct Menu: View {
                     
                 }
                 Button(action: {
-                        displayedLetter?.append(TorU(global: whatIsGlobal))
+                        displayedLetter?.append(TorU(Global: whatIsGlobal))
                 }) {
-                    Text(TorU(global: whatIsGlobal))
+                    Text(TorU(Global: whatIsGlobal))
                         .bold()
                         .font(.system(size: 30))
                         .foregroundColor(.cyan)
