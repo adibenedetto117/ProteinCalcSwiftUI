@@ -54,7 +54,7 @@ extension Menu {
             case "C":
                 output.append("G")
             default:
-                return "Invalid Input"
+                return "%"
             }
         }
         for i in output {
@@ -172,8 +172,8 @@ extension Menu {
                 index += 1
             }
         } else {
-            return "Invalid Input"
+            return "%"
         }
-        return "Invalid Input"
+        return "%"
     }
 }

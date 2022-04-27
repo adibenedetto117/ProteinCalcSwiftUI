@@ -6,7 +6,7 @@ target 'ProteinCalculator' do
   use_frameworks!
 
   # Pods for ProteinCalculator
-	pod 'Snappable', '~> 0.3.0'
+  pod 'ProgressHUD'
 
 
 

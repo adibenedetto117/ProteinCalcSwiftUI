@@ -12,11 +12,11 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @AppStorage("setting") var isSettingViewActive: Bool = false
+    
     @State private var selectedIndex: Int = 1
     var body: some View {
         ZStack {
-            if isSettingViewActive == false {
+            
                 VStack(spacing: 0) {
                     
                     
@@ -49,9 +49,7 @@ struct ContentView: View {
                     
                 }.padding(.bottom, 20)//: VSTACK
                 .background(colorBackground.ignoresSafeArea(.all,edges: .all))
-            } else {
-                SettingsView()
-            }
+            
             
            
             

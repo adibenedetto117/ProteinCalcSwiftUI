@@ -1,16 +1,24 @@
 PODS:
+  - JGProgressHUD (2.2)
+  - ProgressHUD (13.6)
   - Snappable (0.3.0)
 
 DEPENDENCIES:
+  - JGProgressHUD
+  - ProgressHUD
   - Snappable (~> 0.3.0)
 
 SPEC REPOS:
   trunk:
+    - JGProgressHUD
+    - ProgressHUD
     - Snappable
 
 SPEC CHECKSUMS:
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
+  ProgressHUD: 4bdaa0d2ddf676b23324b199f9facffb5c3a1620
   Snappable: 8db31258d36c7fba14e951134e0d14592a0f3ba9
 
-PODFILE CHECKSUM: 69ea9fe17ff77e4fffd83502888172acb1fd6e54
+PODFILE CHECKSUM: 28cbbb45d2182d1feaa2eec51407ad646a1e8764
 
 COCOAPODS: 1.11.2

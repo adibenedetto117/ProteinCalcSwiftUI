@@ -7,7 +7,7 @@
 // Menu Push
 
 import SwiftUI
-
+import ProgressHUD
 
 
 
@@ -15,6 +15,8 @@ struct Menu: View {
    
     @AppStorage("global") var whatIsGlobal: Int = 0
     @State private var displayedLetter: String? = ""
+    @State private var isAnimated: Bool = false
+    @State private var isAnimatedG: Bool = false
     var body: some View {
         
        
@@ -50,6 +52,7 @@ struct Menu: View {
             HStack {
                 Button(action: {
                     displayedLetter?.append("A")
+                    
                 }) {
                     Text("A")
                         .bold()
@@ -58,6 +61,7 @@ struct Menu: View {
                         .frame(width: 72, height: 56, alignment: .center)
                         .background(buttonBackground)
                         .cornerRadius(10)
+                        
                         
                 }
                 Button(action: {
@@ -164,10 +168,21 @@ struct Menu: View {
                     
                     
                     if whatIsGlobal == 0 {
-                        displayedLetter = dnaToMRNA(dnaToMRNAInput: displayedLetter!)
+                        if dnaToMRNA(dnaToMRNAInput: displayedLetter!) == "%" {
+                            ProgressHUD.showError("Invalid Input")
+                            
+                        } else {
+                            displayedLetter = dnaToMRNA(dnaToMRNAInput: displayedLetter!)
+                        }
+                        
                          
                     } else if whatIsGlobal == 1 {
-                        displayedLetter = templateStrandToMRNA(templateStrandInput: displayedLetter!)
+                        if templateStrandToMRNA(templateStrandInput: displayedLetter!) == "%" {
+                            ProgressHUD.showError("Invalid Input")
+                        } else {
+                            displayedLetter = templateStrandToMRNA(templateStrandInput: displayedLetter!)
+                        }
+                       
                         
                     } 
                 }) {
@@ -185,6 +200,12 @@ struct Menu: View {
             }
             
     }
+        .offset(x: 0 , y: isAnimated ? 0 : 50)
+        .onAppear(perform: {
+            withAnimation(.easeOut(duration: 0.7)) {
+                isAnimated.toggle()
+            }
+        })
     
     }
 struct Menu_Previews: PreviewProvider {
