@@ -14,6 +14,7 @@ struct NavigationBarView: View {
     @AppStorage("setting") var isSettingViewActive: Bool = false
     @State private var isAnimatedGear: Bool = false
     @State private var isAnimatedQuestionMark: Bool = false
+    @AppStorage("question") var isQuestionViewActive: Bool = false
     
     //MARK: - BODY
     
@@ -26,14 +27,23 @@ struct NavigationBarView: View {
                
                 
                 
-                Image(systemName: "gearshape")
-                    .font(.title)
-                    .foregroundColor(.black)
-                    .onTapGesture {
-                        withAnimation(.easeOut) {
-                            isSettingViewActive = true
-                        }
-                    }
+                Button(action: {
+                                 withAnimation(Animation.linear(duration: 0.5)) {
+                                     isSettingViewActive = true
+                                 }
+                             }, label: {
+                             Image(systemName: "gearshape")
+                             .font(.title)
+                             .foregroundColor(.black)
+                             .offset(x: isAnimatedGear ? 0 : -32, y: 0)
+                             .onAppear(perform: {
+                                 withAnimation(.easeOut(duration: 0.7)) {
+                                     isAnimatedGear.toggle()
+                                 }
+                             })
+                             
+                             
+                             })//: BUTTON
                   
                     Spacer()
                     
@@ -48,7 +58,12 @@ struct NavigationBarView: View {
                         })
                     Spacer()
                     
-                    Button(action:  {}, label: {
+                    Button(action:  {
+                        withAnimation(Animation.linear(duration: 0.5)) {
+                            isQuestionViewActive = true
+                        }
+                        
+                    }, label: {
                         Image(systemName: "questionmark.circle")
                             .font(.title)
                             .foregroundColor(.black)

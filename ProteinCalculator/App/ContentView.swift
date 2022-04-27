@@ -12,11 +12,12 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("setting") var isSettingViewActive: Bool = false
+    @AppStorage("question") var isQuestionViewActive: Bool = false
     
     @State private var selectedIndex: Int = 1
     var body: some View {
         ZStack {
-            if isSettingViewActive == false {
+            if isSettingViewActive == false && isQuestionViewActive == false{
                 VStack(spacing: 0) {
                     
                     
@@ -49,8 +50,10 @@ struct ContentView: View {
                     
                 }.padding(.bottom, 20)//: VSTACK
                 .background(colorBackground.ignoresSafeArea(.all,edges: .all))
-            } else {
+            } else if isSettingViewActive == true {
                 SettingsView()
+            } else if isQuestionViewActive == true {
+                questionPageView()
             }
             
            

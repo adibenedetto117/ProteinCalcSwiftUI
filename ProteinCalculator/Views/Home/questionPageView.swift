@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct questionPageView: View {
+    @AppStorage("question") var isQuestionViewActive: Bool = false
     var body: some View {
         
         
+            
+        
+        VStack(alignment: .leading) {
+                  Spacer()
             Text("?")
                 .font(.system(size: 60))
                 .bold()
@@ -20,10 +25,6 @@ struct questionPageView: View {
             .frame(width:70, height: 700, alignment: .center))
             .padding()
         
-        
-        VStack(alignment: .leading) {
-            
-           
             
             HStack() {
                 Text("DNA to mRNA:")
@@ -42,16 +43,23 @@ struct questionPageView: View {
                 Text("Enter the template strand")
             }
             
-            Spacer()
             
-        }
-        VStack {
-        Text("FAQ")
-            .bold()
-            .font(.system(size: 50))
-        }
-        VStack(alignment: .leading) {
-            Text("How to find the template strand from a doubles stranded ")
+            Button(action: {
+                withAnimation(Animation.linear(duration: 0.5)) {
+                    isQuestionViewActive = false
+                }
+            }, label: {
+                Image(systemName: "xmark")
+                    .font(.title)
+                    .foregroundColor(.black)
+                   
+                
+            })
+
+            Spacer()
+           
+            
+            Spacer()
         }
     }
 }
