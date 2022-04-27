@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3932CF6628178C1400D8648D /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3932CF6528178C1400D8648D /* Test.swift */; };
 		39450F59281348BE00512F73 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39450F58281348BE00512F73 /* LogoView.swift */; };
 		3957DDFE2810DB680012E0C2 /* ProteinCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3957DDFD2810DB680012E0C2 /* ProteinCalculatorApp.swift */; };
 		3957DE002810DB680012E0C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3957DDFF2810DB680012E0C2 /* ContentView.swift */; };
@@ -26,7 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3932CF6528178C1400D8648D /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		39450F58281348BE00512F73 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		3957DDFA2810DB680012E0C2 /* ProteinCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProteinCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3957DDFD2810DB680012E0C2 /* ProteinCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinCalculatorApp.swift; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 			children = (
 				3957DDFD2810DB680012E0C2 /* ProteinCalculatorApp.swift */,
 				3957DDFF2810DB680012E0C2 /* ContentView.swift */,
-				3932CF6528178C1400D8648D /* Test.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -314,7 +311,6 @@
 				3957DE002810DB680012E0C2 /* ContentView.swift in Sources */,
 				39D4B244281261C20006EBE8 /* NavigationBarView.swift in Sources */,
 				39704A722815053D003412C3 /* Menu.swift in Sources */,
-				3932CF6628178C1400D8648D /* Test.swift in Sources */,
 				3957DDFE2810DB680012E0C2 /* ProteinCalculatorApp.swift in Sources */,
 				39450F59281348BE00512F73 /* LogoView.swift in Sources */,
 				39D173D628138A12005077A0 /* FormRowLinkView.swift in Sources */,

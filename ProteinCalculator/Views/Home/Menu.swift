@@ -12,14 +12,16 @@ import SwiftUI
 
 
 struct Menu: View {
-    @AppStorage("global") var whatIsGlobal: Int = 1
-
+   
+    @AppStorage("global") var whatIsGlobal: Int = 0
+    var TorU: String = ""
     @State private var displayedLetter: String? = ""
     var body: some View {
         
-
-        
-        
+       
+    
+            
+            
         VStack(spacing: 8){
             
             if displayedLetter!.count < 25 {
@@ -80,6 +82,7 @@ struct Menu: View {
                         .bold()
                         .font(.system(size: 30))
                         .foregroundColor(.cyan)
+                        .padding()
                         .frame(width: 72, height: 56, alignment: .center)
                         .background(buttonBackground)
                         .cornerRadius(10)
@@ -160,11 +163,14 @@ struct Menu: View {
             HStack {
                 Button(action: {
                     
-                    displayedLetter = String(whatIsGlobal)
                     
-                    //displayedLetter = codingStrandToMRNA(codingStrandInput: displayedLetter!)
-                
-                    
+                    if whatIsGlobal == 0 {
+                        displayedLetter = dnaToMRNA(dnaToMRNAInput: displayedLetter!)
+                         
+                    } else if whatIsGlobal == 1 {
+                        displayedLetter = templateStrandToMRNA(templateStrandInput: displayedLetter!)
+                        
+                    } 
                 }) {
                     
                     Text("Convert")

@@ -30,6 +30,10 @@ extension Menu {
         }
     }
     
+    func test(test: String) -> String{
+        return test + "bbbb"
+    }
+    
     //MARK: TEMPLATESTRAND
     func templateStrandToMRNA(templateStrandInput: String) -> String {
         var outputFinal: String = ""

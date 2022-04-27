@@ -8,6 +8,8 @@
 import SwiftUI
 
 //MARK: - Variables
+
+
 var Categories: [Category] = []
 var lastIndex: Int = 0
 
@@ -25,7 +27,8 @@ struct Category: Hashable {
 }
 
 struct ConvertSelector: View {
-    @AppStorage("global") var whatIsGlobal: Int = 1
+    
+    @AppStorage("global") var whatIsGlobal: Int = 0
     @Binding var selectedIndex: Int
     @State private var currentIndex: Int = 1
     @Namespace private var ns
@@ -34,10 +37,8 @@ struct ConvertSelector: View {
         _selectedIndex = selectedIndex
         Categories.removeAll()
         
-        Categories.append(Category(id: 0, title: "Template Strand to mRNA", selected: false))
-        Categories.append(Category(id: 1, title: "mRNA to Protein", selected: true))
-        Categories.append(Category(id: 2, title: "Coding Strand to mRNA", selected: false))
-        Categories.append(Category(id: 3, title: "Double Strand to mRNA", selected: false))
+        Categories.append(Category(id: 1, title: "DNA To mRNA", selected: false))
+        Categories.append(Category(id: 0, title: "mRNA to Protein", selected: true))
     }
     
     
@@ -45,18 +46,24 @@ struct ConvertSelector: View {
     var body: some View {
         VStack {
             
-            ScrollView(.horizontal, showsIndicators: false) {
+            
                 
                 ScrollViewReader { scrollView in
                     
                     HStack(spacing: 35) {
                         
                         ForEach(Categories, id: \.self) { item in
+                            
+                            
+                           
+                            
+                            
+                            
                             if item.id == currentIndex {
                                 ZStack() {
                                     Text(item.title)
                                         .bold()
-                                        .font(.system(size: 18))
+                                        .font(.system(size: 24))
                                         .foregroundColor(buttonBackground)
                                         
                                         
@@ -66,6 +73,9 @@ struct ConvertSelector: View {
                                     
                                 }
                             } else {
+                                
+                                
+                                
                                 Text(item.title)
                                     
                                     .bold()
@@ -76,8 +86,8 @@ struct ConvertSelector: View {
                                             currentIndex = item.id
                                             whatIsGlobal = currentIndex
                                             selectedIndex = currentIndex
-                                            scrollView.scrollTo(item, anchor: .center)
-                                                
+                                            
+                                            
                                             
                                         }
                                     }
@@ -90,7 +100,7 @@ struct ConvertSelector: View {
                     
                     
                }
-            }
+            
             
         }
         .padding()
