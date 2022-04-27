@@ -18,67 +18,57 @@ struct NavigationBarView: View {
     //MARK: - BODY
     
     var body: some View {
-        HStack {
-            
-            
-             Button(action: {
-                 withAnimation(Animation.linear(duration: 0.5)) {
-                     isSettingViewActive = true
-                 }
-             }, label: {
-             Image(systemName: "gearshape")
-             .font(.title)
-             .foregroundColor(.black)
-             .offset(x: isAnimatedGear ? 0 : -32, y: 0)
-             .onAppear(perform: {
-                 withAnimation(.easeOut(duration: 0.7)) {
-                     isAnimatedGear.toggle()
-                 }
-             })
-             
-             
-             })//: BUTTON
-            
-            
-            /*
-            Image(systemName: "gearshape")
-                .font(.title)
-                .foregroundColor(.black)
-                .onTapGesture {
-                    withAnimation(.easeOut) {
-                        isSettingViewActive = true
-                    }
-                }
-              */
-                Spacer()
+       
+        
+            HStack {
                 
-                LogoView()
-                    .opacity(isAnimatedTitle ? 1 : 0)
-                    .offset(x: 0, y: isAnimatedTitle ? 0 : -25)
-                    .onAppear(perform:  {
-                        withAnimation(.easeOut(duration: 0.5)) {
-                            isAnimatedTitle.toggle()
+             
+               
+                
+                
+                Image(systemName: "gearshape")
+                    .font(.title)
+                    .foregroundColor(.black)
+                    .onTapGesture {
+                        withAnimation(.easeOut) {
+                            isSettingViewActive = true
                         }
-                    })
-                Spacer()
+                    }
+                  
+                    Spacer()
+                    
                 
-                Button(action:  {}, label: {
-                    Image(systemName: "questionmark.circle")
-                        .font(.title)
-                        .foregroundColor(.black)
-                        .offset(x: isAnimatedQuestionMark ? 0 : 32, y: 0)
-                        .onAppear(perform: {
-                            withAnimation(.easeOut(duration: 0.7)) {
-                                isAnimatedQuestionMark.toggle()
+                    LogoView()
+                        .opacity(isAnimatedTitle ? 1 : 0)
+                        .offset(x: 0, y: isAnimatedTitle ? 0 : -25)
+                        .onAppear(perform:  {
+                            withAnimation(.easeOut(duration: 0.5)) {
+                                isAnimatedTitle.toggle()
                             }
                         })
+                    Spacer()
                     
-                })//: BUTTON
+                    Button(action:  {}, label: {
+                        Image(systemName: "questionmark.circle")
+                            .font(.title)
+                            .foregroundColor(.black)
+                            .offset(x: isAnimatedQuestionMark ? 0 : 32, y: 0)
+                            .onAppear(perform: {
+                                withAnimation(.easeOut(duration: 0.7)) {
+                                    isAnimatedQuestionMark.toggle()
+                                }
+                            })
+                        
+                    })//: BUTTON
                 
-            }//: HSTACK
+                    
+            }
+            
+        }//: HSTACK
         }
-    }
+        
     
+
     //MARK: - PREVIEW
     
     struct NavigationBarView_Previews: PreviewProvider {
@@ -88,4 +78,4 @@ struct NavigationBarView: View {
                 .padding()
         }
     }
-
+//is 
