@@ -11,7 +11,7 @@ struct SettingsView: View {
     //MARK: - PROPERTIES
     
     @Environment(\.presentationMode) var presentationMode
-
+    @AppStorage("setting") var isSettingViewActive: Bool = false
     
     //MARK: - BODY
    
@@ -56,7 +56,7 @@ struct SettingsView: View {
             } //: VSTACK
             .navigationBarItems(trailing: Button(action: {
                 withAnimation(Animation.easeOut(duration: 0.5)) {
-                    
+                    isSettingViewActive  = false
                 }
             }) {
                 Image(systemName: "xmark")
