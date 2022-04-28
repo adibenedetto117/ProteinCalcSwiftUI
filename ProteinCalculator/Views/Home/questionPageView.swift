@@ -14,7 +14,19 @@ struct questionPageView: View {
         
             
         
-        VStack(alignment: .leading) {
+        VStack(alignment: .center) {
+            Spacer()
+            Button(action: {
+                withAnimation(Animation.linear(duration: 0.5)) {
+                    isQuestionViewActive = false
+                }
+            }, label: {
+                Image(systemName: "xmark")
+                    .font(.title)
+                    .foregroundColor(.black)
+                   
+                
+            })
                   Spacer()
             Text("?")
                 .font(.system(size: 60))
@@ -44,17 +56,7 @@ struct questionPageView: View {
             }
             
             
-            Button(action: {
-                withAnimation(Animation.linear(duration: 0.5)) {
-                    isQuestionViewActive = false
-                }
-            }, label: {
-                Image(systemName: "xmark")
-                    .font(.title)
-                    .foregroundColor(.black)
-                   
-                
-            })
+            
 
             Spacer()
            
