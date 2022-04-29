@@ -7,7 +7,6 @@ target 'ProteinCalculator' do
 
   # Pods for ProteinCalculator
   pod 'ProgressHUD'
-
-
+  pod 'JGProgressHUD'
 
 end

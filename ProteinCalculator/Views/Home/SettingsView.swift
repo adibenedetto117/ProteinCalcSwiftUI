@@ -34,9 +34,9 @@ struct SettingsView: View {
                     //MARK: - SECTION 4
                     Section(header: Text("About the application")) {
                         FormRowStaticView(icon: "doc.badge.gearshape.fill", firstText: "Application", secondText: "Protein Converter")
-                        FormRowStaticView(icon: "checkmark.seal", firstText: "Compatibility", secondText: "iPhone, IPad")
-                        FormRowStaticView(icon: "keyboard", firstText: "Developers", secondText: "Anthony / Nicolas")
-                        FormRowStaticView(icon: "flag", firstText: "Version", secondText: "1.0.0")
+                        FormRowStaticView(icon: "checkmark.seal", firstText: "Compatibility", secondText: "iPhone")
+                        FormRowStaticView(icon: "keyboard", firstText: "Developers", secondText: "Anthony DiBenedetto / Nicolas Longo")
+                        FormRowStaticView(icon: "flag", firstText: "Version", secondText: "1.1")
                     }//: SECTION 4
                     .padding(.vertical, 3)
                     

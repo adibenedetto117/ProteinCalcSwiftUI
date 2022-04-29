@@ -1,14 +1,6 @@
-//
-//  ConvertSelector.swift
-//  ProteinCalculator
-//
-//  Created by Nicolas Longo on 4/24/22.
-//
-
 import SwiftUI
 
 //MARK: - Variables
-
 
 var Categories: [Category] = []
 var lastIndex: Int = 0
@@ -28,7 +20,7 @@ struct Category: Hashable {
 
 struct ConvertSelector: View {
     
-    @AppStorage("global") var whatIsGlobal: Int = 0
+    @AppStorage("globals") var globalIndex: Int = 1
     @Binding var selectedIndex: Int
     @State private var currentIndex: Int = 1
     @Namespace private var ns
@@ -36,6 +28,7 @@ struct ConvertSelector: View {
     init(selectedIndex: Binding<Int>) {
         _selectedIndex = selectedIndex
         Categories.removeAll()
+        globalIndex = currentIndex
         
         Categories.append(Category(id: 1, title: "DNA To mRNA", selected: false))
         Categories.append(Category(id: 0, title: "mRNA to Protein", selected: true))
@@ -84,7 +77,7 @@ struct ConvertSelector: View {
                                     .onTapGesture {
                                         withAnimation {
                                             currentIndex = item.id
-                                            whatIsGlobal = currentIndex
+                                            globalIndex = currentIndex
                                             selectedIndex = currentIndex
                                             
                                             
@@ -113,5 +106,3 @@ struct ConvertSelector_Previews: PreviewProvider {
         ConvertSelector(selectedIndex: .constant(0))
     }
 }
-
-

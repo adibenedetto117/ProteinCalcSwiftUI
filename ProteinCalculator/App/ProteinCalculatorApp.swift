@@ -8,9 +8,21 @@
 import SwiftUI
 
 @main
+
+
 struct ProteinCalculatorApp: App {
+    
+    @AppStorage("setting") var isSettingViewActive: Bool = false
+    @AppStorage("question") var isQuestionViewActive: Bool = false
+    init() {
+        isSettingViewActive = false
+        isQuestionViewActive = false
+        
+    }
     var body: some Scene {
+        
         WindowGroup {
+            
             ContentView()
         }
     }

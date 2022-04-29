@@ -13,10 +13,13 @@ import ProgressHUD
 
 struct Menu: View {
    
-    @AppStorage("global") var whatIsGlobal: Int = 0
+    //@AppStorage("global") var whatIsGlobal: Int = 0
     @State private var displayedLetter: String? = ""
     @State private var isAnimated: Bool = false
     @State private var isAnimatedG: Bool = false
+    @AppStorage("globals") var globalIndex: Int = 1
+    
+    
     var body: some View {
         
        
@@ -79,9 +82,9 @@ struct Menu: View {
                     
                 }
                 Button(action: {
-                        displayedLetter?.append(TorU(Global: whatIsGlobal))
+                        displayedLetter?.append(TorU(Global: globalIndex))
                 }) {
-                    Text(TorU(Global: whatIsGlobal))
+                    Text(TorU(Global: globalIndex))
                         .bold()
                         .font(.system(size: 30))
                         .foregroundColor(.cyan)
@@ -167,7 +170,10 @@ struct Menu: View {
                 Button(action: {
                     
                     
-                    if whatIsGlobal == 0 {
+                    
+
+
+                    if globalIndex == 0 {
                         if dnaToMRNA(dnaToMRNAInput: displayedLetter!) == "%" {
                             ProgressHUD.showError("Invalid Input")
                             
@@ -176,7 +182,7 @@ struct Menu: View {
                         }
                         
                          
-                    } else if whatIsGlobal == 1 {
+                    } else if globalIndex == 1 {
                         if templateStrandToMRNA(templateStrandInput: displayedLetter!) == "%" {
                             ProgressHUD.showError("Invalid Input")
                         } else {
@@ -184,7 +190,9 @@ struct Menu: View {
                         }
                        
                         
-                    } 
+                    }
+                     
+                    
                 }) {
                     
                     Text("Convert")

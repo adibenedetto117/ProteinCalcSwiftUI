@@ -19,3 +19,9 @@ struct chubber {
 }
 
 
+
+class globals: ObservableObject {
+    //@Published var gloablIndex = 0
+}
+
+

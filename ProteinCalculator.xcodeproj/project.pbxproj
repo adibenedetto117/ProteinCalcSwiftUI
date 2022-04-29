@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0196113D8C7A21CB6FC832CD /* Pods_ProteinCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06205D121F39D708747C4B72 /* Pods_ProteinCalculator.framework */; };
 		39450F59281348BE00512F73 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39450F58281348BE00512F73 /* LogoView.swift */; };
 		3957DDFE2810DB680012E0C2 /* ProteinCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3957DDFD2810DB680012E0C2 /* ProteinCalculatorApp.swift */; };
 		3957DE002810DB680012E0C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3957DDFF2810DB680012E0C2 /* ContentView.swift */; };
@@ -20,12 +21,12 @@
 		39D4B24228125C6C0006EBE8 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D4B24128125C6C0006EBE8 /* FooterView.swift */; };
 		39D4B244281261C20006EBE8 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D4B243281261C20006EBE8 /* NavigationBarView.swift */; };
 		39FF95442813723A00A7BD87 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF95432813723A00A7BD87 /* SettingsView.swift */; };
-		A264234321F294F72706FD5F /* Pods_ProteinCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4FACDB83E18F5C5959F0EE /* Pods_ProteinCalculator.framework */; };
 		DF3827552819E26B00F12365 /* questionPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3827542819E26B00F12365 /* questionPageView.swift */; };
 		DF92DE4C2815D35700BBB0B9 /* ConvertSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF92DE4B2815D35700BBB0B9 /* ConvertSelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06205D121F39D708747C4B72 /* Pods_ProteinCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProteinCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39450F58281348BE00512F73 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		3957DDFA2810DB680012E0C2 /* ProteinCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProteinCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3957DDFD2810DB680012E0C2 /* ProteinCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinCalculatorApp.swift; sourceTree = "<group>"; };
@@ -41,11 +42,10 @@
 		39D4B24128125C6C0006EBE8 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		39D4B243281261C20006EBE8 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		39FF95432813723A00A7BD87 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		3D4FACDB83E18F5C5959F0EE /* Pods_ProteinCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProteinCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		73FD262D9B3E6B82414AE298 /* Pods-ProteinCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProteinCalculator.debug.xcconfig"; path = "Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		9CCC6B617255C19B68FBAC7F /* Pods-ProteinCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProteinCalculator.debug.xcconfig"; path = "Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		9F611A9D1EA990618255E4A4 /* Pods-ProteinCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProteinCalculator.release.xcconfig"; path = "Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator.release.xcconfig"; sourceTree = "<group>"; };
 		DF3827542819E26B00F12365 /* questionPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionPageView.swift; sourceTree = "<group>"; };
 		DF92DE4B2815D35700BBB0B9 /* ConvertSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertSelector.swift; sourceTree = "<group>"; };
-		FD7F11162F256E21BA28DB28 /* Pods-ProteinCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProteinCalculator.release.xcconfig"; path = "Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A264234321F294F72706FD5F /* Pods_ProteinCalculator.framework in Frameworks */,
+				0196113D8C7A21CB6FC832CD /* Pods_ProteinCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,10 +63,18 @@
 		01137CFFAB36E9823CD60723 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				73FD262D9B3E6B82414AE298 /* Pods-ProteinCalculator.debug.xcconfig */,
-				FD7F11162F256E21BA28DB28 /* Pods-ProteinCalculator.release.xcconfig */,
+				9CCC6B617255C19B68FBAC7F /* Pods-ProteinCalculator.debug.xcconfig */,
+				9F611A9D1EA990618255E4A4 /* Pods-ProteinCalculator.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		09629BCFCDD62A6964B57154 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06205D121F39D708747C4B72 /* Pods_ProteinCalculator.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3957DDF12810DB680012E0C2 = {
@@ -75,7 +83,7 @@
 				3957DDFC2810DB680012E0C2 /* ProteinCalculator */,
 				3957DDFB2810DB680012E0C2 /* Products */,
 				01137CFFAB36E9823CD60723 /* Pods */,
-				965F0698AD4781E9F40FF616 /* Frameworks */,
+				09629BCFCDD62A6964B57154 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,14 +190,6 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		965F0698AD4781E9F40FF616 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3D4FACDB83E18F5C5959F0EE /* Pods_ProteinCalculator.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,19 +197,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3957DE082810DB690012E0C2 /* Build configuration list for PBXNativeTarget "ProteinCalculator" */;
 			buildPhases = (
-				29D51EF14088BFCB6833AB43 /* [CP] Check Pods Manifest.lock */,
+				2CA7F8DCBD7B0486B0AFE234 /* [CP] Check Pods Manifest.lock */,
 				3957DDF62810DB680012E0C2 /* Sources */,
 				3957DDF72810DB680012E0C2 /* Frameworks */,
 				3957DDF82810DB680012E0C2 /* Resources */,
-				B83B146FC775D2C817D52426 /* [CP] Embed Pods Frameworks */,
+				08E920B4238C02CDD0AEC397 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ProteinCalculator;
-			packageProductDependencies = (
-			);
 			productName = ProteinCalculator;
 			productReference = 3957DDFA2810DB680012E0C2 /* ProteinCalculator.app */;
 			productType = "com.apple.product-type.application";
@@ -238,8 +236,6 @@
 				Base,
 			);
 			mainGroup = 3957DDF12810DB680012E0C2;
-			packageReferences = (
-			);
 			productRefGroup = 3957DDFB2810DB680012E0C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -262,7 +258,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		29D51EF14088BFCB6833AB43 /* [CP] Check Pods Manifest.lock */ = {
+		08E920B4238C02CDD0AEC397 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CA7F8DCBD7B0486B0AFE234 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,23 +295,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B83B146FC775D2C817D52426 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProteinCalculator/Pods-ProteinCalculator-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -443,17 +439,18 @@
 		};
 		3957DE092810DB690012E0C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73FD262D9B3E6B82414AE298 /* Pods-ProteinCalculator.debug.xcconfig */;
+			baseConfigurationReference = 9CCC6B617255C19B68FBAC7F /* Pods-ProteinCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProteinCalculator/Preview Content\"";
-				DEVELOPMENT_TEAM = BQ4RH5UGZR;
+				DEVELOPMENT_TEAM = 49H959234X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProteinCalculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "DNA Converter";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -465,27 +462,29 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Anthony-Nico.ProteinCalculator";
+				PRODUCT_BUNDLE_IDENTIFIER = "Anthony-Nico-Jack.ProteinCalculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3957DE0A2810DB690012E0C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD7F11162F256E21BA28DB28 /* Pods-ProteinCalculator.release.xcconfig */;
+			baseConfigurationReference = 9F611A9D1EA990618255E4A4 /* Pods-ProteinCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProteinCalculator/Preview Content\"";
-				DEVELOPMENT_TEAM = BQ4RH5UGZR;
+				DEVELOPMENT_TEAM = 49H959234X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProteinCalculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "DNA Converter";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -497,11 +496,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Anthony-Nico.ProteinCalculator";
+				PRODUCT_BUNDLE_IDENTIFIER = "Anthony-Nico-Jack.ProteinCalculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

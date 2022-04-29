@@ -14,9 +14,15 @@ struct ContentView: View {
     @AppStorage("setting") var isSettingViewActive: Bool = false
     @AppStorage("question") var isQuestionViewActive: Bool = false
     
+    
     @State private var selectedIndex: Int = 1
     var body: some View {
+        
+        
         ZStack {
+            
+            
+            
             if isSettingViewActive == false && isQuestionViewActive == false{
                 VStack(spacing: 0) {
                     
@@ -44,8 +50,8 @@ struct ContentView: View {
                     
                    
                     Spacer()
+                   
                     Menu()
-                    
                     
                     
                 }.padding(.bottom, 20)//: VSTACK
