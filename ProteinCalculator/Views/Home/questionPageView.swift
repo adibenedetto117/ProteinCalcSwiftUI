@@ -12,58 +12,81 @@ struct questionPageView: View {
     var body: some View {
         
         
-            
+        VStack {
         
         VStack(alignment: .center) {
-            Spacer()
-            Button(action: {
-                withAnimation(Animation.linear(duration: 0.5)) {
-                    isQuestionViewActive = false
-                }
-            }, label: {
-                Image(systemName: "xmark")
-                    .font(.title)
-                    .foregroundColor(.black)
-                   
-                
-            })
-                  Spacer()
-            Text("?")
-                .font(.system(size: 60))
-                .bold()
-                .overlay(
-           Circle()
-            .stroke(lineWidth: 5)
-            .frame(width:70, height: 700, alignment: .center))
-            .padding()
+                Text("?")
+                    .font(.system(size: 60))
+                    .foregroundColor(buttonBackground)
+                    .bold()
+                    .overlay(
+               Circle()
+                .stroke(lineWidth: 5)
+                .fill(buttonBackground)
+                .frame(width:70, height: 700, alignment: .center))
+                .padding()
+                .padding()
+                .padding()
+                .padding()
+        }
         
             
-            HStack() {
-                Text("DNA to mRNA:")
-                    .bold()
-                Text("Enter template strand and click covert")
-            }
-            HStack {
-                Text("mRNA to Protein:")
-                    .bold()
-                Text("Enter mRNA and click convert")
-            }
+    Spacer()
             
-            HStack {
-                Text("Double strand:")
-                    .bold()
-                Text("Enter the template strand")
+        
+            VStack {
+                
+                    Text("DNA to mRNA:")
+                        .bold()
+                    Text("Enter a template strand and click covert to produce the complementary mRNA strand")
+                    .multilineTextAlignment(.center)
+                
+            }
+            Spacer()
+            VStack {
+                
+                    Text("mRNA to Protein:")
+                        .bold()
+                    Text("Enter a mRNA and click convert to produce the amino acid chain")
+                    .multilineTextAlignment(.center)
+
+            }
+            Spacer()
+            VStack {
+                
+                    Text("Double strand:")
+                        .bold()
+                    Text("Enter the template strand of the double strand and click convert to produce the complementary mRNA strand")
+                    .multilineTextAlignment(.center)
+
             }
             
             
             
 
-            Spacer()
-           
+        
             
-            Spacer()
+          Spacer()
+           
+            Button(action: {
+                withAnimation(Animation.linear(duration: 0.5)) {
+                    isQuestionViewActive = false
+                }
+            }, label: {
+                Image(systemName: "arrow.backward")
+                    .font(.title)
+                    .foregroundColor(.blue)
+                    .padding()
+                    .padding()
+                    
+
+                   
+                
+            })
         }
+            
     }
+    
 }
 
 struct questionPageView_Previews: PreviewProvider {
@@ -71,3 +94,4 @@ struct questionPageView_Previews: PreviewProvider {
         questionPageView()
     }
 }
+

@@ -174,21 +174,24 @@ struct Menu: View {
 
 
                     if globalIndex == 0 {
-                        if dnaToMRNA(dnaToMRNAInput: displayedLetter!) == "%" {
-                            ProgressHUD.showError("Invalid Input")
+                        if dnaToMRNA(dnaToMRNAInput: displayedLetter!) == "%%" {
+                            ProgressHUD.showError("AUG is not present.")
                             
+                        } else if dnaToMRNA(dnaToMRNAInput: displayedLetter!) == "%"{
+                            ProgressHUD.showError("Invalid Input.")
                         } else {
                             displayedLetter = dnaToMRNA(dnaToMRNAInput: displayedLetter!)
                         }
                         
                          
                     } else if globalIndex == 1 {
-                        if templateStrandToMRNA(templateStrandInput: displayedLetter!) == "%" {
+
+                        if templateStrandToMRNA(templateStrandInput: displayedLetter!) == "%"  {
                             ProgressHUD.showError("Invalid Input")
                         } else {
                             displayedLetter = templateStrandToMRNA(templateStrandInput: displayedLetter!)
                         }
-                       
+                        
                         
                     }
                      

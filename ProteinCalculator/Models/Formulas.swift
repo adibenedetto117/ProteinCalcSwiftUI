@@ -163,7 +163,7 @@ extension Menu {
                                     MRNAFinalText +=  MRNAFinalTextChar + "-"
                                 }
                             } else {
-                                MRNAFinalText+=""
+                                return "%"
                             }
                         }
                         return String(MRNAFinalText.dropLast())
@@ -172,7 +172,7 @@ extension Menu {
                 index += 1
             }
         } else {
-            return "%"
+            return "%%"
         }
         return "%"
     }
